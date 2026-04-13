@@ -1,6 +1,6 @@
 import React from 'react';
 import copyData from '../../../gym-website-copy.json';
-import { SectionHeader, StandardCard, WhatsAppButton, SecondaryLink } from '@/components/ui';
+import { SectionHeader, WhatsAppButton, Animate } from '@/components/ui';
 
 const ChatSVG = () => (
   <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -37,73 +37,44 @@ export function HowItWorks() {
   const icons = [ChatSVG, DoorSVG, CheckmarkSVG];
 
   return (
-    <section className="w-full py-16 px-6 lg:py-24 bg-surface-card">
+    <section id="how-it-works" className="w-full py-16 px-6 lg:py-24 bg-white text-gray-900">
       <div className="max-w-7xl mx-auto">
-        <SectionHeader 
-          eyebrow={data.eyebrowLabel}
-          heading={data.headline}
-          subtitle={data.subHeadline}
-          align="center"
-        />
+        <Animate variant="fadeUp" duration={700}>
+          <SectionHeader 
+            eyebrow={data.eyebrowLabel}
+            heading={data.headline}
+            align="center"
+          />
+        </Animate>
 
-        {/* 3-Column Timeline */}
+        {/* 3-Column Timeline with mb-8 mobile vertical spacing isolation */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 relative w-full mb-16">
           {data.steps.map((step, index) => {
-            const Icon = icons[index] || ChatSVG;
+            const Icon = icons[index];
             return (
-              <div key={step.id} className="relative z-10 flex flex-col">
-                <StandardCard className="h-full flex flex-col items-center text-center !p-8 bg-surface-base shadow-none border border-gray-100 hover:shadow-card-base transition-all group">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-card-base text-brand-primary mb-6 ring-4 ring-brand-primary/5 group-hover:scale-110 transition-transform duration-300">
+              <Animate key={step.id} variant="fadeUp" delay={index * 150} duration={650} className="flex flex-col items-center text-center">
+                <div className="relative mb-8">
+                  <div className="w-20 h-20 rounded-full bg-brand-primary/10 flex items-center justify-center mb-0 mx-auto">
                     <Icon />
                   </div>
-                  <span className="text-accent-saffron font-bold text-xs uppercase tracking-widest mb-3">
+                  <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-brand-primary text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-widest shadow">
                     {step.stepNumberLabel}
                   </span>
-                  <h3 className="text-text-heading text-xl md:text-2xl font-extrabold mb-4 leading-snug">
-                    {step.title}
-                  </h3>
-                  <p className="text-text-body text-base leading-relaxed mb-6">
-                    {step.body}
-                  </p>
-                  
-                  {/* Micro Detail with border isolation */}
-                  <p className="text-sm font-semibold text-text-body opacity-80 mt-auto flex-grow italic border-t border-gray-200/60 pt-4 w-full">
-                    {step.microDetail}
-                  </p>
-
-                  {/* Step-specific inline CTA handling */}
-                  {step.ctaButton?.optionA && (
-                    <SecondaryLink 
-                      href={`https://wa.me/?text=${encodeURIComponent(step.ctaButton.preFilledWhatsAppMessage || '')}`} 
-                      className="mt-6 flex justify-center w-full"
-                    >
-                      {step.ctaButton.optionA}
-                    </SecondaryLink>
-                  )}
-                </StandardCard>
-
-                {/* Sub-Task 5.3 strictly maps connecting lines on Desktop and Arrows vertically on mobile */}
-                {index < data.steps.length - 1 && (
-                  <>
-                    <div className="hidden lg:flex absolute top-[20%] -right-[32px] w-[50px] items-center justify-center z-0">
-                      <ArrowRightSVG />
-                    </div>
-                    <div className="flex lg:hidden absolute -bottom-[32px] left-1/2 -translate-x-1/2 items-center justify-center z-0">
-                      <ArrowDownSVG />
-                    </div>
-                  </>
-                )}
-              </div>
+                </div>
+                <h3 className="text-gray-900 text-lg md:text-xl font-extrabold leading-snug whitespace-pre-line text-center mt-4">
+                  {step.title}
+                </h3>
+              </Animate>
             );
           })}
         </div>
 
-        {/* Sub-Task 5.3: Reassurance Strip ( bg-accent-guarantee ) flex-col -> md:flex-row */}
-        <div className="w-full bg-accent-guarantee rounded-2xl py-8 px-6 mb-16 shadow-inner tracking-wide">
-          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-evenly gap-6 md:gap-4 text-center divide-y md:divide-y-0 md:divide-x divide-gray-300/60">
+        {/* Reassurance Strip */}
+        <div className="w-full bg-black/5 rounded-2xl py-8 px-6 mb-16 border border-black/10 tracking-wide">
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-evenly gap-6 md:gap-4 text-center divide-y md:divide-y-0 md:divide-x divide-gray-300">
             {data.reassuranceStrip.phrases.map((phrase, idx) => (
               <div key={idx} className="w-full md:w-1/3 pt-4 md:pt-0 px-4 first:pt-0">
-                <p className="font-extrabold text-text-heading text-sm md:text-base tracking-wide">
+                <p className="font-extrabold text-brand-primary text-sm md:text-base tracking-wide">
                   {phrase.text}
                 </p>
               </div>
@@ -113,18 +84,16 @@ export function HowItWorks() {
 
         {/* Section Core WhatsApp Conversion Target */}
         <div className="flex flex-col items-center justify-center text-center max-w-2xl mx-auto">
-          <h3 className="text-text-heading text-2xl md:text-3xl font-extrabold mb-8 loading-tight">
+          <h3 className="text-gray-900 text-xl md:text-2xl font-extrabold mb-8 leading-tight">
             {data.closingCta.closingLine}
           </h3>
           <WhatsAppButton 
-            href={`https://wa.me/?text=${encodeURIComponent(data.closingCta.ctaButton.preFilledWhatsAppMessage)}`}
+            href={`https://wa.me/919876543210?text=${encodeURIComponent(data.closingCta.ctaButton.preFilledWhatsAppMessage)}`}
             className="w-full sm:w-auto px-10"
           >
             {data.closingCta.ctaButton.label}
           </WhatsAppButton>
-          <p className="text-sm font-semibold text-text-body mt-4 opacity-80">
-            {data.closingCta.ctaButton.belowButtonMicroLine}
-          </p>
+
         </div>
 
       </div>

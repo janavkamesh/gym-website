@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import copyData from '../../../gym-website-copy.json';
 
+import { Animate } from '@/components/ui';
+
 const heroData = copyData.websiteData.sections.heroSection;
 
 export interface HeroSectionProps {
@@ -18,7 +20,7 @@ export function HeroSection({
   primaryButtonWaMessage = heroData.primaryButton.preFilledWhatsAppMessageTask3,
 }: HeroSectionProps) {
   return (
-    <section className="relative min-h-[85vh] lg:min-h-[90vh] flex flex-col justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-[85vh] lg:min-h-[90vh] flex flex-col justify-center overflow-hidden">
       {/* Background Image Layer & Contrast Overhaul */}
       <div className="absolute inset-0 z-0 bg-black">
         <Image
@@ -26,36 +28,44 @@ export function HeroSection({
           alt="Wide view of the premium Aura Wellness gym floor in Chennai featuring modern equipment"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-center animate-hero-bg"
           sizes="100vw"
           quality={85}
         />
-        {/* Strict 50% dark overlay for guaranteed text legibility */}
-        <div className="absolute inset-0 bg-black/50 z-0" />
+        {/* Strict 70% dark overlay reducing background opacity significantly for guaranteed text legibility */}
+        <div className="absolute inset-0 bg-black/70 z-0" />
       </div>
 
       {/* Hero Content container wrapped in explicit max-w and padding boundaries */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 flex flex-col items-center justify-center text-center py-20 lg:py-0">
         
-        {/* Typography Scaling & Text Shadow Rendering */}
-        <h1 className="text-white text-4xl md:text-6xl lg:text-[4.5rem] font-extrabold leading-[1.1] md:leading-[1.15] tracking-tight mb-6 max-w-5xl drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
-          {headline}
-        </h1>
+        {/* H1: Enters first */}
+        <Animate variant="fadeUp" delay={0} duration={750}>
+          <h1 className="text-white text-[2rem] md:text-[2.6rem] lg:text-[2.75rem] font-extrabold leading-[1.15] tracking-tight mb-5 max-w-3xl drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+            {headline}
+          </h1>
+        </Animate>
         
-        <p className="text-gray-200 text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl drop-shadow-md leading-relaxed font-medium">
-          {subHeadline}
-        </p>
+        {/* Paragraph: Enters second */}
+        <Animate variant="fadeUp" delay={200} duration={750}>
+          <p className="text-gray-200 text-sm md:text-base mb-10 max-w-xl drop-shadow-md leading-relaxed font-medium">
+            {subHeadline}
+          </p>
+        </Animate>
 
-        {/* Solid Option A WhatsApp Block CTA */}
-        <a 
-          href={`https://wa.me/?text=${encodeURIComponent(primaryButtonWaMessage)}`}
-          className="relative z-10 bg-[#25D366] text-white font-semibold text-base md:text-lg py-4 px-10 rounded shadow-cta-heavy hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(37,211,102,0.4)] transition-all flex items-center justify-center w-full sm:w-auto"
-        >
-          {primaryButtonLabel}
-        </a>
+        {/* CTA: Enters last */}
+        <Animate variant="fadeUp" delay={400} duration={750}>
+          <a 
+            href={`https://wa.me/919876543210?text=${encodeURIComponent(primaryButtonWaMessage)}`}
+            className="relative z-10 bg-brand-primary text-white font-semibold text-base md:text-lg py-4 px-10 rounded shadow-cta-heavy hover:-translate-y-1 hover:shadow-cta-hover transition-all flex items-center justify-center w-full sm:w-auto"
+          >
+            {primaryButtonLabel}
+          </a>
+        </Animate>
       </div>
     </section>
   );
 }
 
 export default HeroSection;
+

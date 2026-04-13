@@ -11,7 +11,7 @@
         },
         "optionC": "💬 எங்களை தொடர்பு கொள்ளுங்கள்",
         "tooltipDesktop": "Start with a free day — no commitment needed",
-        "preFilledWhatsAppMessage": "Hi [Gym Name], I'd like to know more about the free 1-day trial.",
+        "preFilledWhatsAppMessage": "Hi Aura Wellness, I'd like to know more about the free 1-day trial.",
         "specs": {
           "minimumTouchTarget": "56x56px",
           "color": "native WhatsApp green",
@@ -23,9 +23,9 @@
       "headerNavigation": {
         "componentId": "G-02",
         "phoneNumber": {
-          "displayFormat": "📞 [Phone Number]",
+          "displayFormat": "📞 +91 98765 43210",
           "hoverLabel": "Tap to call us now",
-          "ariaLabel": "Call [Gym Name] directly",
+          "ariaLabel": "Call Aura Wellness directly",
           "subLabel": "Open 5:30AM – 10PM · 7 days",
           "renderAs": "tel: link"
         }
@@ -54,16 +54,16 @@
           "optionC": "The Best Gym in Chennai for People Who Are Done Starting Over."
         },
         "recommendedHeadline": "Option A for above-the-fold emotional resonance. Pair with Option C as the meta title tag for SEO.",
-        "subHeadline": "At [Gym Name], we build a plan around your body, your schedule, and your goal — not a generic routine. Join 1,200+ members in [Neighborhood] who stopped guessing and started seeing real change.",
+        "subHeadline": "At Aura Wellness, we build a plan around your body, your schedule, and your goal — not a generic routine. Join 1,200+ members in Chennai who stopped guessing and started seeing real change.",
         "backgroundImage": {
-          "artDirectionNote": "Do not use stock. The hero image must be a real interior shot of [Gym Name] — natural lighting, visible equipment, at least one real member (non-posed). This is a copy-adjacent decision; the image is a trust signal and must match the empathetic tone.",
+          "artDirectionNote": "Do not use stock. The hero image must be a real interior shot of Aura Wellness — natural lighting, visible equipment, at least one real member (non-posed). This is a copy-adjacent decision; the image is a trust signal and must match the empathetic tone.",
           "format": "WebP, compressed under 200KB",
           "overlayNote": "Use a subtle dark overlay (≤40% opacity) to keep H1 contrast ratio WCAG-compliant.",
-          "altText": "Real members training at [Gym Name] gym in [Neighborhood], Chennai"
+          "altText": "Real members training at Aura Wellness gym in Chennai, Chennai"
         },
         "primaryButton": {
           "componentId": "H-01",
-          "preFilledWhatsAppMessageTask3": "Hi, I'd like a free 1-day trial at [Gym Name]",
+          "preFilledWhatsAppMessageTask3": "Hi, I'd like a free 1-day trial at Aura Wellness",
           "labelOptions": {
             "optionA": "Get Your Free 1-Day Trial →",
             "optionB": "Claim My Free Day →",
@@ -85,17 +85,17 @@
           "reviewCountText": "4.8 stars · 320+ verified Google reviews",
           "ctaLabel": "Read what our members are saying →",
           "linkBehaviour": "Opens GMB profile in new tab — never navigate away from the page",
-          "ariaLabel": "Open [Gym Name] Google reviews in a new tab",
+          "ariaLabel": "Open Aura Wellness Google reviews in a new tab",
           "loadingState": "Loading live reviews...",
-          "errorState": "Reviews temporarily unavailable. Search \"[Gym Name] reviews\" on Google to read them.",
+          "errorState": "Reviews temporarily unavailable. Search \"Aura Wellness reviews\" on Google to read them.",
           "developerNote": "Embed the live Google Reviews widget — not a screenshot. A static image of stars has zero credibility. The widget must auto-sync so the review count updates in real time."
         },
         "establishmentYearBadge": {
           "componentId": "T-02",
           "icon": "small calendar or shield glyph",
-          "badgeText": "Established [Year] · Serving [Neighborhood] for [X] Years",
+          "badgeText": "Established 2014 · Serving Chennai for [X] Years",
           "subLabel": "Still here. Still delivering results.",
-          "ariaLabel": "[Gym Name] has been serving [Neighborhood] since [Year]",
+          "ariaLabel": "Aura Wellness has been serving Chennai since 2014",
           "tooltipDesktop": "[X] years of training real people in Chennai"
         },
         "memberCountBadge": {
@@ -103,12 +103,12 @@
           "icon": "people/community glyph",
           "badgeText": "1,200+ Members Trained",
           "subLabel": "Real people. Real results. Right here in Chennai.",
-          "ariaLabel": "Over 1,200 members have trained at [Gym Name] since [Year]",
-          "tooltipDesktop": "Real members. Real results. Right here in [Neighborhood]."
+          "ariaLabel": "Over 1,200 members have trained at Aura Wellness since 2014",
+          "tooltipDesktop": "Real members. Real results. Right here in Chennai."
         },
         "femaleSafetyBadge": {
           "badgeText": "Female Trainers Available",
-          "subLabel": "A safe, welcoming space for every woman in [Neighborhood].",
+          "subLabel": "A safe, welcoming space for every woman in Chennai.",
           "note": "Recommended addition — captures 35–45% of female enquiries that competitors are systematically losing."
         },
         "trustBarLayoutNote": "Display all three trust elements in a single horizontal trust bar on desktop, and a vertically stacked card row on mobile. This entire section sits directly below the hero fold with no padding gap."
@@ -116,7 +116,7 @@
       "valueProp": {
         "sectionId": "ValueProp_SolutionFraming",
         "psychologicalStage": "Consideration",
-        "eyebrowLabel": "WHAT MAKES [GYM NAME] DIFFERENT",
+        "eyebrowLabel": "WHAT MAKES AURA WELLNESS DIFFERENT",
         "headline": "Not a Gym That Sells Memberships. A Gym That Delivers Results.",
         "benefitCards": [
           {
@@ -130,8 +130,8 @@
             "id": 2,
             "icon": "Shield or Certification glyph",
             "title": "Certified Trainers Who Actually Show Up For You",
-            "body": "Every trainer at [Gym Name] is certified, named, and accountable to your progress. You will never be handed a routine and left alone on the floor.",
-            "hoverExpandedLine": "Every trainer at [Gym Name] is certified, named, and personally accountable to your progress."
+            "body": "Every trainer at Aura Wellness is certified, named, and accountable to your progress. You will never be handed a routine and left alone on the floor.",
+            "hoverExpandedLine": "Every trainer at Aura Wellness is certified, named, and personally accountable to your progress."
           },
           {
             "id": 3,
@@ -144,7 +144,7 @@
         "femaleFirstBlock": {
           "componentId": "V-01",
           "developerNote": "This block must visually break from the 3-card grid. Render it as a full-width warm-toned banner — a distinct background colour (soft warm beige or a muted brand colour) with a real photo of female members training, not a stock image. It must feel like a deliberate, dedicated statement — not a footnote.",
-          "eyebrowLabel": "FOR EVERY WOMAN IN [NEIGHBORHOOD]",
+          "eyebrowLabel": "FOR EVERY WOMAN IN ANNA NAGAR",
           "headline": "A Space Where You Feel Safe, Seen, and Supported.",
           "body": "We have a dedicated women's section, certified female trainers, and timings built around your schedule. No judgment. No uncomfortable stares. Just a clean, focused environment where you can show up and work — at your own pace.",
           "supportingDetailLine": "Zumba · Weight Loss · Yoga · Strength Training — all available with female trainers on request.",
@@ -152,7 +152,7 @@
             "optionA": "Chat With a Female Trainer →",
             "optionB": "Ask About the Women's Section →",
             "optionC": "Message Priya S. Directly →",
-            "preFilledWhatsAppMessage": "Hi, I'd like to know more about the women's section at [Gym Name].",
+            "preFilledWhatsAppMessage": "Hi, I'd like to know more about the women's section at Aura Wellness.",
             "loadingState": "Opening WhatsApp...",
             "belowButtonMicroLine": "Female trainers available every morning and evening."
           }
@@ -163,7 +163,7 @@
         "psychologicalStage": "Consideration",
         "eyebrowLabel": "REAL MEMBERS. REAL RESULTS. NO FILTERS.",
         "headline": "1,200 People in Chennai Started Exactly Where You Are Now.",
-        "subHeadline": "Every photo below is a [Gym Name] member — a real name, a real number, a real result.",
+        "subHeadline": "Every photo below is a Aura Wellness member — a real name, a real number, a real result.",
         "photoCardFramework": {
           "elements": [
             "Member First Name + Initial (Tamil name, large, above the photo pair)",
@@ -178,10 +178,10 @@
             "componentId": "S-01-example-01",
             "name": "Divya R.",
             "resultHeadline": "Lost 14 kg. Went from exhausted to energetic.",
-            "contextLine": "Mother of two, had not exercised in 4 years before joining [Gym Name].",
+            "contextLine": "Mother of two, had not exercised in 4 years before joining Aura Wellness.",
             "timeStamp": "Achieved in 90 days · Velachery",
-            "beforeImageAltText": "Divya R. before beginning her 90-day program at [Gym Name], Chennai",
-            "afterImageAltText": "Divya R. after losing 14kg in 90 days at [Gym Name], [Neighborhood]"
+            "beforeImageAltText": "Divya R. before beginning her 90-day program at Aura Wellness, Chennai",
+            "afterImageAltText": "Divya R. after losing 14kg in 90 days at Aura Wellness, Chennai"
           },
           {
             "id": 2,
@@ -190,19 +190,19 @@
             "resultHeadline": "Gained 8 kg of muscle. Finally consistent for the first time.",
             "contextLine": "IT professional who had tried and quit three gyms before this one.",
             "timeStamp": "Achieved in 16 weeks · Anna Nagar",
-            "beforeImageAltText": "Karthikeyan M. before beginning his program at [Gym Name], Chennai",
-            "afterImageAltText": "Karthikeyan M. after gaining 8kg of muscle over 16 weeks at [Gym Name], Anna Nagar"
+            "beforeImageAltText": "Karthikeyan M. before beginning his program at Aura Wellness, Chennai",
+            "afterImageAltText": "Karthikeyan M. after gaining 8kg of muscle over 16 weeks at Aura Wellness, Anna Nagar"
           },
           {
             "id": 3,
             "componentId": "S-01-example-03",
             "name": "Meenakshi S.",
             "resultHeadline": "Lost 9 kg. Started with Zumba. Never looked back.",
-            "contextLine": "Homemaker from [Neighborhood] who was nervous to walk into a gym alone.",
-            "timeStamp": "Achieved in 12 weeks · [Neighborhood]",
+            "contextLine": "Homemaker from Chennai who was nervous to walk into a gym alone.",
+            "timeStamp": "Achieved in 12 weeks · Chennai",
             "placementLogic": "Strategically placed as the third card to reinforce the female-first block from Section 3",
-            "beforeImageAltText": "Meenakshi S. before beginning her program at [Gym Name], Chennai",
-            "afterImageAltText": "Meenakshi S. after losing 9kg in 12 weeks at [Gym Name], [Neighborhood]"
+            "beforeImageAltText": "Meenakshi S. before beginning her program at Aura Wellness, Chennai",
+            "afterImageAltText": "Meenakshi S. after losing 9kg in 12 weeks at Aura Wellness, Chennai"
           }
         ],
         "videoTestimonialCarousel": {
@@ -256,7 +256,7 @@
             "optionA": "Claim Your Free 1-Day Trial →",
             "optionB": "I Want Results Like These →",
             "loadingState": "Opening WhatsApp...",
-            "preFilledWhatsAppMessage": "Hi, I saw the results on your website and I'd like to try a free day at [Gym Name].",
+            "preFilledWhatsAppMessage": "Hi, I saw the results on your website and I'd like to try a free day at Aura Wellness.",
             "belowButtonMicroLine": "Your free day — no card, no form, no commitment."
           }
         }
@@ -266,7 +266,6 @@
         "psychologicalStage": "Consideration / Evaluation",
         "eyebrowLabel": "YOUR FIRST STEP IS SIMPLER THAN YOU THINK",
         "headline": "Three Steps Between You and the Best Decision You'll Make This Year.",
-        "subHeadline": "No forms. No upfront fees. No awkward walk-ins. Just one WhatsApp message — and we handle everything from there.",
         "visualLayoutNote": "Render as a horizontal three-column icon timeline on desktop. On mobile, stack vertically with a connecting line or subtle arrow between steps.",
         "steps": [
           {
@@ -274,23 +273,23 @@
             "componentId": "W-01",
             "icon": "WhatsApp glyph or chat bubble",
             "stepNumberLabel": "Step 01",
-            "title": "Send Us One Message on WhatsApp",
+            "title": "Send Us One Message\non WhatsApp",
             "body": "Tap the button below and send us a simple message — we have already written it for you. No long forms, no personal details upfront, no sales call you didn't ask for.",
             "microDetail": "We reply within 30 minutes during gym hours. After hours? We reply first thing in the morning — your message will not get lost.",
-            "ariaLabel": "Step 1: Send one WhatsApp message to [Gym Name]",
+            "ariaLabel": "Step 1: Send one WhatsApp message to Aura Wellness",
             "ctaButton": {
               "optionA": "Send the Message — It's Already Written →",
               "optionB": "Tap to Open WhatsApp →",
               "optionC": "Start My Free Day — One Tap →",
               "loadingState": "Opening WhatsApp for you...",
-              "preFilledWhatsAppMessage": "Hi [Gym Name], I'd like to book my free 1-day trial. When can I come in?"
+              "preFilledWhatsAppMessage": "Hi Aura Wellness, I'd like to book my free 1-day trial. When can I come in?"
             }
           },
           {
             "id": 2,
             "icon": "Door or calendar glyph",
             "stepNumberLabel": "Step 02",
-            "title": "Come In for a Free Full Day — No Strings Attached",
+            "title": "Come In for a Free\nFull Day",
             "body": "We will set up your free 1-day trial at a time that fits your schedule. Walk in, meet your trainer, use the full facility, and decide with complete clarity — not from a brochure, but from real experience.",
             "microDetail": "Bring comfortable clothes and a water bottle. That is genuinely all you need.",
             "ariaLabel": "Step 2: Come in for a completely free full-day trial"
@@ -299,8 +298,8 @@
             "id": 3,
             "icon": "membership card or checkmark glyph",
             "stepNumberLabel": "Step 03",
-            "title": "Pick the Gym Membership in Chennai That Fits Your Life",
-            "body": "After your free day, if [Gym Name] feels right — choose the plan that fits your goal and your budget. Monthly. Quarterly. Annual. No pressure to decide on the spot, and no joining fee for the rest of this week.",
+            "title": "Choose Your Membership Plan\nThat Fits Your Life",
+            "body": "After your free day, if Aura Wellness feels right — choose the plan that fits your goal and your budget. Monthly. Quarterly. Annual. No pressure to decide on the spot, and no joining fee for the rest of this week.",
             "microDetail": "Not sure which plan? Your trainer will walk you through it — in Tamil or English, whichever you prefer.",
             "ariaLabel": "Step 3: Choose the gym membership plan that fits your life and budget"
           }
@@ -312,7 +311,7 @@
           "phrases": [
             {
               "text": "No Joining Fee This Week",
-              "ariaLabel": "No joining fee this week at [Gym Name]"
+              "ariaLabel": "No joining fee this week at Aura Wellness"
             },
             {
               "text": "Free 1-Day Trial — No Card Required",
@@ -330,7 +329,7 @@
           "ctaButton": {
             "label": "Start With a Free Day →",
             "loadingState": "Opening WhatsApp...",
-            "preFilledWhatsAppMessage": "Hi, I'd like to book my free 1-day trial at [Gym Name]. When can I come in?",
+            "preFilledWhatsAppMessage": "Hi, I'd like to book my free 1-day trial at Aura Wellness. When can I come in?",
             "belowButtonMicroLine": "The first message takes ten seconds. Everything after that is ours to handle."
           }
         }
@@ -354,26 +353,26 @@
             "id": 1,
             "componentId": "TR-01a",
             "name": "Karthik R.",
-            "certificationLine": "ACE Certified · NSCA · 7 Years at [Gym Name]",
+            "certificationLine": "ACE Certified · NSCA · 7 Years at Aura Wellness",
             "specialisationTag": "Strength Training · Muscle Building · Beginner Foundations",
             "personalQuote": "I have trained first-timers who were scared to touch a barbell. Six months later, they are teaching others. That journey never gets old for me.",
             "ctaButton": {
               "label": "Chat with Karthik →",
               "loadingState": "Connecting...",
-              "preFilledWhatsAppMessage": "Hi Karthik, I saw your profile on the [Gym Name] website. I'm a beginner and I'd like to know more about getting started."
+              "preFilledWhatsAppMessage": "Hi Karthik, I saw your profile on the Aura Wellness website. I'm a beginner and I'd like to know more about getting started."
             }
           },
           {
             "id": 2,
             "componentId": "TR-01b",
-            "name": "Priya S.",
+            "name": "Priya",
             "certificationLine": "ISSA Certified · Nutrition Coaching · 5 Years Experience",
             "specialisationTag": "Weight Loss · Zumba · Post-Pregnancy Fitness · Women's Wellness",
             "personalQuote": "Every woman who walks in here nervous about being judged — I was that woman once. I became a trainer so that no one has to figure this out alone.",
             "ctaButton": {
-              "label": "Chat with Priya S. →",
+              "label": "Chat with Priya →",
               "loadingState": "Connecting...",
-              "preFilledWhatsAppMessage": "Hi Priya, I saw your profile on the [Gym Name] website. I'm looking for a female trainer for weight loss. Can we talk?"
+              "preFilledWhatsAppMessage": "Hi Priya, I saw your profile on the Aura Wellness website. I'm looking for a female trainer for weight loss. Can we talk?"
             }
           },
           {
@@ -386,7 +385,7 @@
             "ctaButton": {
               "label": "Chat with Dinesh →",
               "loadingState": "Connecting...",
-              "preFilledWhatsAppMessage": "Hi Dinesh, I saw your profile on the [Gym Name] website and I'd like to learn more about your training approach."
+              "preFilledWhatsAppMessage": "Hi Dinesh, I saw your profile on the Aura Wellness website and I'd like to learn more about your training approach."
             }
           }
         ],
@@ -401,7 +400,7 @@
             "optionB": "Start My Free Day With Priya →",
             "optionC": "Ask About Female Trainer Slots →",
             "loadingState": "Opening WhatsApp...",
-            "preFilledWhatsAppMessage": "Hi, I'd like to book a free trial session with a female trainer at [Gym Name]. Can you help me find a good time?",
+            "preFilledWhatsAppMessage": "Hi, I'd like to book a free trial session with a female trainer at Aura Wellness. Can you help me find a good time?",
             "belowButtonMicroLine": "Female trainer slots available every morning and evening — including weekends."
           }
         },
@@ -409,9 +408,9 @@
           "componentId": "TR-04",
           "developerNote": "Large quote-style typographic block. Dark background, light text, generous padding. No photo. The contrast from the warm card grid makes this strip stop the scroll on mobile.",
           "displayQuote": "We do not measure success by the number of sessions you complete. We measure it by whether you feel different — stronger, more confident, more like yourself — 90 days from today.",
-          "attribution": "— The Training Team at [Gym Name], [Neighborhood], Chennai",
+          "attribution": "— The Training Team at Aura Wellness, Chennai, Chennai",
           "shareIcon": {
-            "ariaLabel": "Share this quote from [Gym Name]",
+            "ariaLabel": "Share this quote from Aura Wellness",
             "tooltipDesktop": "Share this with someone who needs to read it"
           }
         },
@@ -444,7 +443,7 @@
           "componentId": "P-05",
           "label": "🛡️ 90-Day Money-Back Guarantee",
           "tooltipDesktop": "Follow the program for 90 days. See visible results — or we refund every rupee. No questions asked.",
-          "ariaLabel": "[Gym Name] guarantees visible results in 90 days or provides a full refund",
+          "ariaLabel": "Aura Wellness guarantees visible results in 90 days or provides a full refund",
           "placementNote": "Must appear inside every pricing card, directly below the price, before the feature list. It must be impossible to read a price without immediately seeing the guarantee."
         },
         "pricingCards": [
@@ -474,7 +473,7 @@
               "optionA": "Try Basic Free First →",
               "optionB": "Start My Free Day →",
               "loadingState": "Opening WhatsApp...",
-              "preFilledWhatsAppMessage": "Hi, I'm interested in the Basic membership at [Gym Name]. Can I book my free 1-day trial before deciding?",
+              "preFilledWhatsAppMessage": "Hi, I'm interested in the Basic membership at Aura Wellness. Can I book my free 1-day trial before deciding?",
               "belowButtonMicroLine": "Cancel anytime. No questions."
             }
           },
@@ -508,7 +507,7 @@
               "optionA": "Join 6 in 10 — Try Free First →",
               "optionB": "Start My Premium Free Day →",
               "loadingState": "Opening WhatsApp...",
-              "preFilledWhatsAppMessage": "Hi, I'm interested in the Premium membership at [Gym Name]. Can I book my free 1-day trial to see if it's the right fit?",
+              "preFilledWhatsAppMessage": "Hi, I'm interested in the Premium membership at Aura Wellness. Can I book my free 1-day trial to see if it's the right fit?",
               "belowButtonMicroLine": "Monthly or annual — your choice, always."
             }
           },
@@ -542,7 +541,7 @@
               "optionA": "Go All In — Free Day First →",
               "optionB": "Start My Elite Trial →",
               "loadingState": "Opening WhatsApp...",
-              "preFilledWhatsAppMessage": "Hi, I'm interested in the Elite membership at [Gym Name]. Can I book my free trial and speak with a trainer about my goals?",
+              "preFilledWhatsAppMessage": "Hi, I'm interested in the Elite membership at Aura Wellness. Can I book my free trial and speak with a trainer about my goals?",
               "belowButtonMicroLine": "GST receipt provided. Full accountability, day one."
             }
           }
@@ -552,28 +551,28 @@
           "stripCopy": "Not sure which plan fits? Send us a WhatsApp message — we will tell you honestly which one makes sense for your goal and your budget. No upsell.",
           "ctaLabel": "Ask us honestly →",
           "loadingState": "Opening WhatsApp...",
-          "preFilledWhatsAppMessage": "Hi, I've been looking at the [Gym Name] pricing page and I'm not sure which plan makes sense for my goal. Can you help me choose — honestly?",
-          "ariaLabel": "Ask [Gym Name] which membership plan is right for your goal — no sales pressure"
+          "preFilledWhatsAppMessage": "Hi, I've been looking at the Aura Wellness pricing page and I'm not sure which plan makes sense for my goal. Can you help me choose — honestly?",
+          "ariaLabel": "Ask Aura Wellness which membership plan is right for your goal — no sales pressure"
         },
         "guaranteeBlock": {
           "componentId": "P-07",
           "developerNote": "Full-width warm-toned panel with a shield icon. Sits directly below the three pricing cards — not in the footer, not in fine print. Must feel like a promise being made in person.",
           "eyebrowLabel": "OUR PROMISE TO YOU — IN PLAIN LANGUAGE",
           "headline": "Follow the Program for 90 Days. See Visible Results — or We Return Every Rupee.",
-          "body": "This is not a promotional offer with conditions buried in the terms. If you complete 90 days of your program at [Gym Name] and do not see visible, measurable results — we refund your membership fee in full. No arguments, no process, no questions asked.",
+          "body": "This is not a promotional offer with conditions buried in the terms. If you complete 90 days of your program at Aura Wellness and do not see visible, measurable results — we refund your membership fee in full. No arguments, no process, no questions asked.",
           "supportingLine": "Less than 1% of members have ever claimed this guarantee — because the program works. We publish this because we are confident, not because we are cautious.",
           "expandCollapse": {
             "collapsedLabel": "See exactly how the guarantee works →",
             "expandedLabel": "Hide the details ↑",
-            "expandedTermsCopy": "To claim the guarantee: Complete 90 consecutive days of your program at [Gym Name]. Attend the minimum number of weekly sessions for your plan. Notify us at the 90-day mark that you have not seen visible results. We refund your membership fee within [X] business days — no forms, no committee, no conditions. Less than 1% of members have ever needed to claim this. We publish these terms because we are confident — not cautious.",
+            "expandedTermsCopy": "To claim the guarantee: Complete 90 consecutive days of your program at Aura Wellness. Attend the minimum number of weekly sessions for your plan. Notify us at the 90-day mark that you have not seen visible results. We refund your membership fee within [X] business days — no forms, no committee, no conditions. Less than 1% of members have ever needed to claim this. We publish these terms because we are confident — not cautious.",
             "ariaLabel": "Expand to read the full 90-day guarantee terms in plain language"
           }
         },
         "noJoiningFeeStrip": {
           "componentId": "P-08",
-          "stripCopy": "No joining fee this week at [Gym Name] — for any plan, any duration. Walk in for your free day and your first month starts at the plan price only.",
+          "stripCopy": "No joining fee this week at Aura Wellness — for any plan, any duration. Walk in for your free day and your first month starts at the plan price only.",
           "tooltipDesktop": "Walk in for your free day and your first month starts at the plan price only. No extra charges.",
-          "ariaLabel": "[Gym Name] is currently waiving the joining fee for all membership plans this week",
+          "ariaLabel": "Aura Wellness is currently waiving the joining fee for all membership plans this week",
           "developerNote": "No countdown timer. A stated time window without a ticking clock feels like a genuine offer rather than a manipulation tactic. The Tamil Nadu audience has been burned by fake countdown timers."
         },
         "closingCta": {
@@ -582,7 +581,7 @@
           "ctaButton": {
             "label": "Claim Your Free Day — No Card Required →",
             "loadingState": "Opening WhatsApp...",
-            "preFilledWhatsAppMessage": "Hi, I've seen the pricing at [Gym Name] and I'd like to claim my free 1-day trial before choosing a plan. When can I come in?",
+            "preFilledWhatsAppMessage": "Hi, I've seen the pricing at Aura Wellness and I'd like to claim my free 1-day trial before choosing a plan. When can I come in?",
             "belowButtonMicroLine": "First day free. First month from ₹999. 90-day result guaranteed."
           }
         }
@@ -602,15 +601,15 @@
             "optionB": "Book My Free Day on WhatsApp →",
             "optionC": "Start My 90-Day Result — Free First Day →",
             "loadingState": "Opening WhatsApp for you...",
-            "preFilledWhatsAppMessage": "Hi [Gym Name], I've been reading about the gym and I'm ready to book my free 1-day trial. My name is [          ] and my goal is [          ]. When can I come in?",
+            "preFilledWhatsAppMessage": "Hi Aura Wellness, I've been reading about the gym and I'm ready to book my free 1-day trial. My name is [          ] and my goal is [          ]. When can I come in?",
             "belowButtonPrimaryMicroLine": "No card. No form. No commitment — just your first free day.",
             "belowButtonSecondaryMicroLine": "We reply within 30 minutes during gym hours. After hours — first thing in the morning."
           }
         },
         "secondaryCta": {
           "componentId": "F-02",
-          "label": "Prefer to call? Tap here — [Phone Number]",
-          "ariaLabel": "Call [Gym Name] directly — we answer between 6AM and 10PM",
+          "label": "Prefer to call? Tap here — +91 98765 43210",
+          "ariaLabel": "Call Aura Wellness directly — we answer between 6AM and 10PM",
           "tooltipDesktop": "We answer between 6AM and 10PM, seven days a week",
           "renderAs": "tel: link"
         },
@@ -620,7 +619,7 @@
             "componentId": "F-03-arvind",
             "persona": "First Timer",
             "collapsedText": "First Timer? Perfect.",
-            "expandedText": "Karthik has trained hundreds of beginners who felt exactly as you do right now. Your starting point is not a weakness — it is where every result at [Gym Name] begins.",
+            "expandedText": "Karthik has trained hundreds of beginners who felt exactly as you do right now. Your starting point is not a weakness — it is where every result at Aura Wellness begins.",
             "expandToggleLabel": {
               "expand": "Read more ↓",
               "collapse": "Close ↑"
@@ -631,7 +630,7 @@
             "componentId": "F-03-priya",
             "persona": "Female Visitor",
             "collapsedText": "Coming In Alone? You Won't Feel That Way for Long.",
-            "expandedText": "Priya S. and our female trainers are here before you arrive and with you every session. You will know at least one name before your first day ends.",
+            "expandedText": "Priya and our female trainers are here before you arrive and with you every session. You will know at least one name before your first day ends.",
             "expandToggleLabel": {
               "expand": "Read more ↓",
               "collapse": "Close ↑"
@@ -657,28 +656,28 @@
               "id": 1,
               "subject": "Main Training Floor",
               "caption": "Where your 90 days begin.",
-              "altText": "The main training floor at [Gym Name], [Neighborhood], Chennai — real equipment, real members"
+              "altText": "The main training floor at Aura Wellness, Chennai, Chennai — real equipment, real members"
             },
             {
               "id": 2,
               "subject": "Women's Section",
               "caption": "Built for you. Maintained for you.",
-              "altText": "The dedicated women's training section at [Gym Name] — clean, private, and fully equipped"
+              "altText": "The dedicated women's training section at Aura Wellness — clean, private, and fully equipped"
             },
             {
               "id": 3,
               "subject": "Trainer with Member",
               "caption": "This is what accountability looks like.",
-              "altText": "[Gym Name] certified trainer working one-on-one with a member during a personal training session"
+              "altText": "Aura Wellness certified trainer working one-on-one with a member during a personal training session"
             }
           ]
         },
-        "finalClosingLine": "[Gym Name] has been in [Neighborhood] since [Year]. We have seen 1,200 people walk through this door not knowing if they could do it. Every single one of them could. So can you.",
+        "finalClosingLine": "Aura Wellness has been in Chennai since 2014. We have seen 1,200 people walk through this door not knowing if they could do it. Every single one of them could. So can you.",
         "stickyMobileButton": {
           "developerNote": "Fixed bottom-right. Visible throughout entire FinalCTA section scroll. Minimum 56x56px touch target. No animation, no pulse, no notification badge. Z-index: highest on page.",
           "label": "Chat with Us",
           "iconLabel": "WhatsApp icon in native green — white text beside it",
-          "preFilledWhatsAppMessage": "Hi [Gym Name], I've been reading about the gym and I'm ready to book my free 1-day trial. My name is [          ] and my goal is [          ]. When can I come in?"
+          "preFilledWhatsAppMessage": "Hi Aura Wellness, I've been reading about the gym and I'm ready to book my free 1-day trial. My name is [          ] and my goal is [          ]. When can I come in?"
         }
       },
       "footer": {
@@ -686,65 +685,65 @@
         "psychologicalStage": "Action / Verification",
         "developerNote": "Four distinct horizontal bands stacked vertically: (1) Pre-Footer Trust Reinforcement Strip, (2) Primary Footer four-column information grid, (3) Google Maps Embed full-width, (4) Legal Footer Bar. Dark charcoal or deep navy background.",
         "preFooterTrustStrip": {
-          "stripCopy": "[Gym Name] · Established [Year] · 1,200+ Members Trained · Rated [X.X] Stars on Google · [Neighborhood], Chennai",
+          "stripCopy": "Aura Wellness · Established 2014 · 1,200+ Members Trained · Rated [X.X] Stars on Google · Chennai, Chennai",
           "designNote": "Same warm accent colour used in Female-First block, Reassurance Strip, and Guarantee Panel. Full-width, single centred line, generous vertical padding."
         },
         "primaryFooterGrid": {
           "columnAbout": {
-            "heading": "[Gym Name]",
-            "body": "Chennai's most transparent gym — real pricing, named trainers, and a 90-day results guarantee that we have stood behind since [Year]. We train real people in [Neighborhood] and we are not going anywhere.",
-            "socialProofMicroLine": "Serving [Neighborhood] since [Year] · 1,200+ members and counting.",
+            "heading": "Aura Wellness",
+            "body": "Chennai's most transparent gym — real pricing, named trainers, and a 90-day results guarantee that we have stood behind since 2014. We train real people in Chennai and we are not going anywhere.",
+            "socialProofMicroLine": "Serving Chennai since 2014 · 1,200+ members and counting.",
             "socialMediaLinks": {
               "instagram": {
                 "label": "@[gymhandle]",
                 "action": "tap opens Instagram profile"
               },
               "facebook": {
-                "label": "[Gym Name] Chennai",
+                "label": "Aura Wellness Chennai",
                 "action": "tap opens Facebook page"
               },
               "youtube": {
-                "label": "[Gym Name] Transformations",
+                "label": "Aura Wellness Transformations",
                 "action": "tap opens YouTube channel"
               }
             }
           },
           "columnNavigate": {
             "componentId": "FT-05",
-            "heading": "Explore [Gym Name]",
+            "heading": "Explore Aura Wellness",
             "tamilHeading": "ஜிம் பக்கங்கள்",
             "links": [
               {
                 "label": "Home",
-                "ariaLabel": "Return to [Gym Name] homepage"
+                "ariaLabel": "Return to Aura Wellness homepage"
               },
               {
                 "label": "Memberships & Gym Fees in Chennai",
-                "ariaLabel": "View transparent gym membership pricing at [Gym Name]",
+                "ariaLabel": "View transparent gym membership pricing at Aura Wellness",
                 "seoKeyword": "gym fees in Chennai"
               },
               {
                 "label": "Our Trainers — Personal Trainers in Chennai",
-                "ariaLabel": "Meet the certified personal trainers at [Gym Name]",
+                "ariaLabel": "Meet the certified personal trainers at Aura Wellness",
                 "seoKeyword": "personal trainers in Chennai"
               },
               {
                 "label": "Programs & Classes — Zumba · Weight Loss · Strength",
-                "ariaLabel": "Browse Zumba, weight loss, and strength training programs at [Gym Name]"
+                "ariaLabel": "Browse Zumba, weight loss, and strength training programs at Aura Wellness"
               },
               {
                 "label": "Gym for Ladies in Chennai",
-                "ariaLabel": "Women's gym section, female trainers, and ladies-specific programs at [Gym Name]",
+                "ariaLabel": "Women's gym section, female trainers, and ladies-specific programs at Aura Wellness",
                 "seoKeyword": "gym for ladies in Chennai",
                 "note": "Standalone link — every page on the site links here from the footer"
               },
               {
                 "label": "Facility Gallery",
-                "ariaLabel": "View real photos of [Gym Name]'s gym interior and equipment"
+                "ariaLabel": "View real photos of Aura Wellness's gym interior and equipment"
               },
               {
                 "label": "Contact & Location",
-                "ariaLabel": "Find [Gym Name]'s address, phone number, and operating hours"
+                "ariaLabel": "Find Aura Wellness's address, phone number, and operating hours"
               }
             ]
           },
@@ -766,11 +765,11 @@
             "phoneBlock": {
               "componentId": "FT-02",
               "label": "Call or WhatsApp",
-              "number": "[Phone Number]",
+              "number": "+91 98765 43210",
               "renderAs": "tel: link",
               "subLabel": "We answer between 5:30AM and 10PM, seven days a week.",
-              "displayLabel": "📞 [Phone Number]",
-              "ariaLabel": "Call [Gym Name] in [Neighborhood], Chennai"
+              "displayLabel": "📞 +91 98765 43210",
+              "ariaLabel": "Call Aura Wellness in Chennai, Chennai"
             },
             "whatsAppBlock": {
               "componentId": "FT-01",
@@ -778,7 +777,7 @@
               "buttonLabel": "Open WhatsApp →",
               "renderAs": "wa.me deep link",
               "loadingState": "Opening WhatsApp...",
-              "preFilledWhatsAppMessage": "Hi, I found [Gym Name] and I'd like to know more about joining.",
+              "preFilledWhatsAppMessage": "Hi, I found Aura Wellness and I'd like to know more about joining.",
               "belowButtonMicroLine": "We reply within 30 minutes during gym hours."
             },
             "emailBlock": {
@@ -786,31 +785,31 @@
               "label": "Email Us",
               "displayLabel": "✉ [email@gymname.com]",
               "renderAs": "mailto: link",
-              "ariaLabel": "Email [Gym Name] — we respond within 4 hours during gym hours",
+              "ariaLabel": "Email Aura Wellness — we respond within 4 hours during gym hours",
               "subLabel": "Response within 4 hours during gym hours."
             },
             "physicalAddressBlock": {
               "label": "Visit Us",
-              "address": "[Full Street Address], [Neighborhood], Chennai — [PIN Code]",
+              "address": "[Full Street Address], Chennai, Chennai — [PIN Code]",
               "parkingNote": "Free parking available — [X] spaces in front of the building.",
               "landmarkNote": "Opposite [Landmark] · 3 minutes from [Metro/Bus Stop]"
             }
           }
         },
         "gstBusinessRegistration": {
-          "registrationText": "[Gym Name] · GST Registration No: [XXXXXXXXXXXXXXXXX] · Registered Business, Chennai, Tamil Nadu",
+          "registrationText": "Aura Wellness · GST Registration No: [XXXXXXXXXXXXXXXXX] · Registered Business, Chennai, Tamil Nadu",
           "subLine": "GST receipts issued for all membership payments. Request yours at the front desk or via WhatsApp."
         },
         "googleMapsEmbed": {
           "componentId": "FT-04",
           "developerNote": "Full-width interactive Google Maps embed. Minimum height 400px on desktop, 300px on mobile. Interactive — pinch-to-zoom, tap-to-navigate, Get Directions button functional. Do not use a static map screenshot. Implement LocalBusiness schema markup.",
-          "aboveEmbedLine": "We are right here in [Neighborhood], Chennai. Come see us.",
+          "aboveEmbedLine": "We are right here in Chennai, Chennai. Come see us.",
           "tamilAboveEmbedLine": "வாருங்கள், பாருங்கள்",
-          "mapPinLabel": "[Gym Name] · ⭐ [X.X] · Gym in [Neighborhood]",
-          "getDirectionsAriaLabel": "Get directions to [Gym Name] in [Neighborhood], Chennai",
+          "mapPinLabel": "Aura Wellness · ⭐ [X.X] · Gym in Chennai",
+          "getDirectionsAriaLabel": "Get directions to Aura Wellness in Chennai, Chennai",
           "loadingState": "Loading our location...",
-          "errorState": "Map unavailable right now. Our address: [Full Address]. Search us on Google Maps — \"[Gym Name] [Neighborhood]\"",
-          "neighbourhoodSeoLine": "[Gym Name] serves members from across Chennai — including [Neighborhood 1], [Neighborhood 2], [Neighborhood 3], [Neighborhood 4], and [Neighborhood 5]. If you are searching for the best gym in [Neighborhood] — you have found it.",
+          "errorState": "Map unavailable right now. Our address: [Full Address]. Search us on Google Maps — \"Aura Wellness Chennai\"",
+          "neighbourhoodSeoLine": "Aura Wellness serves members from across Chennai — including [Neighborhood 1], [Neighborhood 2], [Neighborhood 3], [Neighborhood 4], and [Neighborhood 5]. If you are searching for the best gym in Chennai — you have found it.",
           "schemaMarkupFields": [
             "name",
             "address",
@@ -824,7 +823,7 @@
           ]
         },
         "legalBar": {
-          "copyrightText": "© [Year] [Gym Name]. All rights reserved.",
+          "copyrightText": "© 2014 Aura Wellness. All rights reserved.",
           "links": [
             { "label": "Privacy Policy" },
             { "label": "Terms & Conditions" }
@@ -854,7 +853,7 @@
           {
             "state": "whatsAppNotInstalled",
             "trigger": "wa.me link on device without WhatsApp",
-            "microcopy": "WhatsApp isn't installed. Call us instead: [Phone Number]"
+            "microcopy": "WhatsApp isn't installed. Call us instead: +91 98765 43210"
           },
           {
             "state": "whatsAppWebFallback",
@@ -917,15 +916,15 @@
           {
             "field": "goal",
             "trigger": "Left blank",
-            "message": "What brings you to [Gym Name]? Even one word helps us prepare."
+            "message": "What brings you to Aura Wellness? Even one word helps us prepare."
           }
         ],
         "successPanel": {
           "headline": "We've Got Your Details — and We're Already Looking Forward to Meeting You.",
-          "subText": "Someone from [Gym Name] will reach out on WhatsApp or by phone within 30 minutes during gym hours. If you sent this after 10PM — we'll reply first thing in the morning. Your message will not get lost.",
+          "subText": "Someone from Aura Wellness will reach out on WhatsApp or by phone within 30 minutes during gym hours. If you sent this after 10PM — we'll reply first thing in the morning. Your message will not get lost.",
           "optionalCta": {
             "label": "While you wait — watch a member's story →",
-            "ariaLabel": "Watch a member testimonial video from [Gym Name] while you wait for our response"
+            "ariaLabel": "Watch a member testimonial video from Aura Wellness while you wait for our response"
           }
         }
       },
@@ -953,7 +952,7 @@
       },
       "pageLoad": {
         "componentId": "SM-05",
-        "loadingBarLabel": "Loading [Gym Name] — almost there...",
+        "loadingBarLabel": "Loading Aura Wellness — almost there...",
         "extendedLoadMessage": "Taking a little longer than usual. Worth the wait — promise.",
         "triggerThreshold": "2.5 seconds LCP threshold on 4G connection",
         "renderNote": "Not a full-screen spinner — a thin progress bar at the top of the viewport plus a single line of text."
@@ -961,13 +960,13 @@
       "notFoundPage": {
         "componentId": "SM-06",
         "headline": "This Page Took a Wrong Turn. Your Fitness Journey Doesn't Have To.",
-        "subText": "The page you were looking for has moved or doesn't exist. But [Gym Name] does — and your free 1-day trial is still waiting.",
+        "subText": "The page you were looking for has moved or doesn't exist. But Aura Wellness does — and your free 1-day trial is still waiting.",
         "primaryCta": {
           "label": "Take Me to the Homepage →"
         },
         "secondaryCta": {
           "label": "Chat With Us on WhatsApp →",
-          "preFilledWhatsAppMessage": "Hi [Gym Name], I landed on a broken page on your website and couldn't find what I was looking for. Can you help?"
+          "preFilledWhatsAppMessage": "Hi Aura Wellness, I landed on a broken page on your website and couldn't find what I was looking for. Can you help?"
         }
       }
     },
@@ -976,21 +975,21 @@
         "order": 1,
         "section": "Hero",
         "ctaLabel": "Get Your Free 1-Day Trial →",
-        "preFilledMessage": "Hi, I'd like a free 1-day trial at [Gym Name]",
+        "preFilledMessage": "Hi, I'd like a free 1-day trial at Aura Wellness",
         "intentSignal": "Passive interest"
       },
       {
         "order": 2,
         "section": "Social Proof",
         "ctaLabel": "Claim Your Free 1-Day Trial →",
-        "preFilledMessage": "Hi, I saw the results on your website and I'd like to try a free day at [Gym Name].",
+        "preFilledMessage": "Hi, I saw the results on your website and I'd like to try a free day at Aura Wellness.",
         "intentSignal": "Evidence-driven interest"
       },
       {
         "order": 3,
         "section": "How It Works",
         "ctaLabel": "Start With a Free Day →",
-        "preFilledMessage": "Hi, I'd like to book my free 1-day trial at [Gym Name]. When can I come in?",
+        "preFilledMessage": "Hi, I'd like to book my free 1-day trial at Aura Wellness. When can I come in?",
         "intentSignal": "Scheduling intent"
       },
       {
@@ -1004,14 +1003,14 @@
         "order": 5,
         "section": "Pricing Table",
         "ctaLabel": "Claim Your Free Day — No Card Required →",
-        "preFilledMessage": "Hi, I've seen the pricing at [Gym Name] and I'd like to claim my free 1-day trial before choosing a plan. When can I come in?",
+        "preFilledMessage": "Hi, I've seen the pricing at Aura Wellness and I'd like to claim my free 1-day trial before choosing a plan. When can I come in?",
         "intentSignal": "Financially qualified, decision-ready"
       },
       {
         "order": 6,
         "section": "Final CTA",
         "ctaLabel": "Get My Free 1-Day Trial →",
-        "preFilledMessage": "Hi [Gym Name], I've been reading about the gym and I'm ready to book my free 1-day trial. My name is [          ] and my goal is [          ]. When can I come in?",
+        "preFilledMessage": "Hi Aura Wellness, I've been reading about the gym and I'm ready to book my free 1-day trial. My name is [          ] and my goal is [          ]. When can I come in?",
         "intentSignal": "Named, goal-stated, arriving"
       }
     ]

@@ -38,7 +38,7 @@ export function NotFoundPage() {
             
             {/* Direct WhatsApp connection intercept */}
             <WhatsAppButton 
-              href={`https://wa.me/?text=${encodeURIComponent(data.secondaryCta.preFilledWhatsAppMessage)}`}
+              href={`https://wa.me/919876543210?text=${encodeURIComponent(data.secondaryCta.preFilledWhatsAppMessage)}`}
               className="w-full sm:w-auto bg-surface-base text-brand-dark border-2 border-brand-primary hover:border-brand-primary hover:bg-brand-primary/5 shadow-none group"
             >
               {data.secondaryCta.label}

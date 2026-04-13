@@ -28,8 +28,8 @@ export function Footer() {
   return (
     <footer className="w-full relative z-40 bg-brand-dark mt-auto overflow-hidden">
        {/* 1. Pre Footer Strip aligned to Female-First warm tones */}
-       <div className="w-full bg-accent-femaleFirst py-8 text-center px-4 shadow-sm border-y border-brand-primary/10">
-         <p className="text-text-heading font-extrabold uppercase tracking-[0.15em] text-xs md:text-sm">
+       <div className="w-full bg-black py-8 text-center px-4 shadow-sm border-y border-brand-primary/10">
+         <p className="text-white font-extrabold uppercase tracking-[0.15em] text-xs md:text-sm">
             {data.preFooterTrustStrip.stripCopy}
          </p>
        </div>
@@ -46,7 +46,7 @@ export function Footer() {
               <p className="text-gray-400 text-sm leading-relaxed mb-6 font-medium">
                 {data.primaryFooterGrid.columnAbout.body}
               </p>
-              <p className="text-accent-saffron text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] mb-6 border-l-2 border-accent-saffron pl-3">
+              <p className="text-brand-primary text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] mb-6 border-l-2 border-brand-primary pl-3">
                 {data.primaryFooterGrid.columnAbout.socialProofMicroLine}
               </p>
               <div className="flex items-center gap-4 text-gray-500">
@@ -58,31 +58,22 @@ export function Footer() {
 
             {/* Column 2: Navigation Layer */}
             <div className="flex flex-col lg:pl-6">
-              <h4 className="text-white text-base font-extrabold tracking-wide mb-1 uppercase">
+              <h4 className="text-white text-base font-extrabold tracking-wide mb-6 uppercase">
                 {data.primaryFooterGrid.columnNavigate.heading}
               </h4>
-              <p className="text-brand-primary/60 text-xs font-noto-sans-tamil mb-8" style={{ fontFamily: "'Noto Sans Tamil', sans-serif" }}>
-                {data.primaryFooterGrid.columnNavigate.tamilHeading}
-              </p>
               <ul className="flex flex-col gap-3.5 mt-1">
-                {data.primaryFooterGrid.columnNavigate.links.map((link, idx) => (
-                  <li key={idx}>
-                    <a href="#" className={`text-sm tracking-wide transition-colors ${link.note ? 'text-accent-saffron font-bold hover:text-white' : 'text-gray-400 hover:text-white font-medium'}`} aria-label={link.ariaLabel}>
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
+                <li><a href="#home" className="text-sm tracking-wide transition-colors text-gray-400 hover:text-white font-medium">Home</a></li>
+                <li><a href="#services" className="text-sm tracking-wide transition-colors text-gray-400 hover:text-white font-medium">Services</a></li>
+                <li><a href="#booking" className="text-sm tracking-wide transition-colors text-brand-primary font-bold hover:text-white">Pricing</a></li>
+                <li><a href="#transform" className="text-sm tracking-wide transition-colors text-gray-400 hover:text-white font-medium">Transform</a></li>
               </ul>
             </div>
 
             {/* Column 3: Hours Protocol */}
             <div className="flex flex-col">
-              <h4 className="text-white text-base font-extrabold tracking-wide mb-1 uppercase">
+              <h4 className="text-white text-base font-extrabold tracking-wide mb-6 uppercase">
                 {data.primaryFooterGrid.columnOperatingHours.heading}
               </h4>
-              <p className="text-brand-primary/60 text-xs font-noto-sans-tamil mb-8" style={{ fontFamily: "'Noto Sans Tamil', sans-serif" }}>
-                {data.primaryFooterGrid.columnOperatingHours.tamilHeading}
-              </p>
               <ul className="flex flex-col gap-3 mb-8">
                 {data.primaryFooterGrid.columnOperatingHours.hours.map((h, idx) => (
                   <li key={idx} className="flex justify-between items-center text-sm border-b border-gray-800/80 pb-2.5 font-medium text-gray-400">
@@ -103,12 +94,9 @@ export function Footer() {
 
             {/* Column 4: Full Pipeline Contact Output */}
             <div className="flex flex-col">
-              <h4 className="text-white text-base font-extrabold tracking-wide mb-1 uppercase">
+              <h4 className="text-white text-base font-extrabold tracking-wide mb-6 uppercase">
                 {data.primaryFooterGrid.columnContact.heading}
               </h4>
-              <p className="text-brand-primary/60 text-xs font-noto-sans-tamil mb-8" style={{ fontFamily: "'Noto Sans Tamil', sans-serif" }}>
-                {data.primaryFooterGrid.columnContact.tamilHeading}
-              </p>
 
               <div className="flex flex-col gap-6">
                  {/* WhatsApp block */}
@@ -123,7 +111,7 @@ export function Footer() {
                  {/* Phone Block */}
                  <div className="flex flex-col items-start gap-1">
                    <span className="text-[10px] text-gray-500 font-extrabold uppercase tracking-[0.2em]">{data.primaryFooterGrid.columnContact.phoneBlock.label}</span>
-                   <a href="tel:+910000000000" className="text-white font-bold font-mono hover:text-brand-primary transition-colors text-sm tracking-wide">
+                   <a href="tel:+919876543210" className="text-white font-bold font-mono hover:text-brand-primary transition-colors text-sm tracking-wide">
                      {data.primaryFooterGrid.columnContact.phoneBlock.displayLabel}
                    </a>
                    <span className="text-xs text-brand-primary opacity-80 mt-1 leading-snug">{data.primaryFooterGrid.columnContact.phoneBlock.subLabel}</span>
@@ -131,7 +119,7 @@ export function Footer() {
 
                  {/* Physical Location Address Base Block */}
                  <div className="flex flex-col items-start gap-1 mt-2 p-4 bg-gray-900 rounded-lg border border-gray-800">
-                   <span className="text-[10px] text-accent-saffron font-extrabold uppercase tracking-[0.2em] mb-1.5">{data.primaryFooterGrid.columnContact.physicalAddressBlock.label}</span>
+                   <span className="text-[10px] text-brand-primary font-extrabold uppercase tracking-[0.2em] mb-1.5">{data.primaryFooterGrid.columnContact.physicalAddressBlock.label}</span>
                    <p className="text-sm text-gray-300 font-medium leading-relaxed mb-3">
                      {data.primaryFooterGrid.columnContact.physicalAddressBlock.address}
                    </p>
@@ -143,16 +131,6 @@ export function Footer() {
               </div>
             </div>
          </div>
-         
-         {/* System Administrative GST Info Tag */}
-         <div className="mt-16 pt-8 border-t border-gray-800/80 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-left">
-           <p className="text-xs font-mono text-gray-500 uppercase tracking-widest max-w-xl">
-             {data.gstBusinessRegistration.registrationText}
-           </p>
-           <p className="text-xs text-gray-500 italic max-w-sm text-left md:text-right">
-             {data.gstBusinessRegistration.subLine}
-           </p>
-         </div>
        </div>
 
        {/* 3. Google Maps Embed Layout Constraints Implemented (min-h-400px desktop) */}
@@ -163,9 +141,7 @@ export function Footer() {
              <p className="text-white font-extrabold text-xl md:text-2xl drop-shadow-lg mb-2 tracking-tight">
                {data.googleMapsEmbed.aboveEmbedLine}
              </p>
-             <p className="text-brand-primary font-noto-sans-tamil drop-shadow-md text-sm md:text-base font-bold" style={{ fontFamily: "'Noto Sans Tamil', sans-serif" }}>
-               {data.googleMapsEmbed.tamilAboveEmbedLine}
-             </p>
+
           </div>
 
           <iframe 
@@ -194,10 +170,6 @@ export function Footer() {
                   {link.label}
                 </a>
              ))}
-             <span className="text-gray-700 text-xs hidden md:inline-block">|</span>
-             <button className="text-accent-saffron text-xs font-extrabold hover:text-white transition-colors uppercase tracking-[0.1em]">
-               {data.legalBar.bilingualToggle}
-             </button>
            </div>
          </div>
        </div>
