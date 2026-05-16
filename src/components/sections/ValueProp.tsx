@@ -30,8 +30,7 @@ export function ValueProp() {
         
         {/* Section Header */}
         <Animate variant="fadeUp" duration={700}>
-          <SectionHeader 
-            eyebrow={data.eyebrowLabel}
+          <SectionHeader
             heading={data.headline}
             align="center"
           />

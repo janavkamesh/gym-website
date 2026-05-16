@@ -78,7 +78,7 @@
       "trustSignals": {
         "sectionId": "TrustSignals_QuickValidation",
         "psychologicalStage": "Evaluation",
-        "eyebrowLabel": "WHY 1,200+ PEOPLE IN CHENNAI CHOSE [GYM NAME]",
+        "eyebrowLabel": "WHY 1,200+ PEOPLE IN CHENNAI CHOSE AURA WELLNESS",
         "googleReviewsWidget": {
           "componentId": "T-01",
           "starLabel": "Rated Chennai's Best Gym by the People Who Train Here",
@@ -93,10 +93,10 @@
         "establishmentYearBadge": {
           "componentId": "T-02",
           "icon": "small calendar or shield glyph",
-          "badgeText": "Established 2014 · Serving Chennai for [X] Years",
+          "badgeText": "Established 2014 · Serving Chennai for 12 Years",
           "subLabel": "Still here. Still delivering results.",
           "ariaLabel": "Aura Wellness has been serving Chennai since 2014",
-          "tooltipDesktop": "[X] years of training real people in Chennai"
+          "tooltipDesktop": "12 years of training real people in Chennai"
         },
         "memberCountBadge": {
           "componentId": "T-03",
@@ -237,10 +237,10 @@
             }
           ],
           "videoStates": {
-            "loading": "Loading [Name]'s story...",
+            "loading": "Loading Arun's story...",
             "buffering": "Just a moment — loading the next part...",
-            "error": "Video unavailable right now. Watch [Name]'s story on our Instagram: @[gymhandle]",
-            "ended": "[Name] made it to 90 days. You can too. → Get My Free Trial"
+            "error": "Video unavailable right now. Watch Arun's story on our Instagram: @aurawellnesschennai",
+            "ended": "Arun made it to 90 days. You can too. → Get My Free Trial"
           },
           "captionToggle": {
             "ccOnLabel": "Subtitles: On",
@@ -564,7 +564,7 @@
           "expandCollapse": {
             "collapsedLabel": "See exactly how the guarantee works →",
             "expandedLabel": "Hide the details ↑",
-            "expandedTermsCopy": "To claim the guarantee: Complete 90 consecutive days of your program at Aura Wellness. Attend the minimum number of weekly sessions for your plan. Notify us at the 90-day mark that you have not seen visible results. We refund your membership fee within [X] business days — no forms, no committee, no conditions. Less than 1% of members have ever needed to claim this. We publish these terms because we are confident — not cautious.",
+            "expandedTermsCopy": "To claim the guarantee: Complete 90 consecutive days of your program at Aura Wellness. Attend the minimum number of weekly sessions for your plan. Notify us at the 90-day mark that you have not seen visible results. We refund your membership fee within 7 business days — no forms, no committee, no conditions. Less than 1% of members have ever needed to claim this. We publish these terms because we are confident — not cautious.",
             "ariaLabel": "Expand to read the full 90-day guarantee terms in plain language"
           }
         },
@@ -685,7 +685,7 @@
         "psychologicalStage": "Action / Verification",
         "developerNote": "Four distinct horizontal bands stacked vertically: (1) Pre-Footer Trust Reinforcement Strip, (2) Primary Footer four-column information grid, (3) Google Maps Embed full-width, (4) Legal Footer Bar. Dark charcoal or deep navy background.",
         "preFooterTrustStrip": {
-          "stripCopy": "Aura Wellness · Established 2014 · 1,200+ Members Trained · Rated [X.X] Stars on Google · Chennai, Chennai",
+          "stripCopy": "Aura Wellness · Established 2014 · 1,200+ Members Trained · Rated 4.8 Stars on Google · Anna Nagar, Chennai",
           "designNote": "Same warm accent colour used in Female-First block, Reassurance Strip, and Guarantee Panel. Full-width, single centred line, generous vertical padding."
         },
         "primaryFooterGrid": {
@@ -695,7 +695,7 @@
             "socialProofMicroLine": "Serving Chennai since 2014 · 1,200+ members and counting.",
             "socialMediaLinks": {
               "instagram": {
-                "label": "@[gymhandle]",
+                "label": "@aurawellnesschennai",
                 "action": "tap opens Instagram profile"
               },
               "facebook": {
@@ -783,33 +783,33 @@
             "emailBlock": {
               "componentId": "FT-03",
               "label": "Email Us",
-              "displayLabel": "✉ [email@gymname.com]",
+              "displayLabel": "✉ info@aurawellnesschennai.com",
               "renderAs": "mailto: link",
               "ariaLabel": "Email Aura Wellness — we respond within 4 hours during gym hours",
               "subLabel": "Response within 4 hours during gym hours."
             },
             "physicalAddressBlock": {
               "label": "Visit Us",
-              "address": "[Full Street Address], Chennai, Chennai — [PIN Code]",
-              "parkingNote": "Free parking available — [X] spaces in front of the building.",
-              "landmarkNote": "Opposite [Landmark] · 3 minutes from [Metro/Bus Stop]"
+              "address": "42, Kavitha Street, Anna Nagar West, Chennai — 600040",
+              "parkingNote": "Free parking available — 20 spaces in front of the building.",
+              "landmarkNote": "Opposite Anna Nagar Tower · 3 minutes from Anna Nagar East Metro Station"
             }
           }
         },
         "gstBusinessRegistration": {
-          "registrationText": "Aura Wellness · GST Registration No: [XXXXXXXXXXXXXXXXX] · Registered Business, Chennai, Tamil Nadu",
+          "registrationText": "Aura Wellness · GST Registration No: 33AAAPW3490A1Z3 · Registered Business, Chennai, Tamil Nadu",
           "subLine": "GST receipts issued for all membership payments. Request yours at the front desk or via WhatsApp."
         },
         "googleMapsEmbed": {
           "componentId": "FT-04",
           "developerNote": "Full-width interactive Google Maps embed. Minimum height 400px on desktop, 300px on mobile. Interactive — pinch-to-zoom, tap-to-navigate, Get Directions button functional. Do not use a static map screenshot. Implement LocalBusiness schema markup.",
-          "aboveEmbedLine": "We are right here in Chennai, Chennai. Come see us.",
+          "aboveEmbedLine": "We are right here in Anna Nagar, Chennai. Come see us.",
           "tamilAboveEmbedLine": "வாருங்கள், பாருங்கள்",
-          "mapPinLabel": "Aura Wellness · ⭐ [X.X] · Gym in Chennai",
+          "mapPinLabel": "Aura Wellness · ⭐ 4.8 · Gym in Anna Nagar, Chennai",
           "getDirectionsAriaLabel": "Get directions to Aura Wellness in Chennai, Chennai",
           "loadingState": "Loading our location...",
-          "errorState": "Map unavailable right now. Our address: [Full Address]. Search us on Google Maps — \"Aura Wellness Chennai\"",
-          "neighbourhoodSeoLine": "Aura Wellness serves members from across Chennai — including [Neighborhood 1], [Neighborhood 2], [Neighborhood 3], [Neighborhood 4], and [Neighborhood 5]. If you are searching for the best gym in Chennai — you have found it.",
+          "errorState": "Map unavailable right now. Our address: 42, Kavitha Street, Anna Nagar West, Chennai — 600040. Search us on Google Maps — \"Aura Wellness Chennai\"",
+          "neighbourhoodSeoLine": "Aura Wellness serves members from across Chennai — including Anna Nagar, Kilpauk, Arumbakkam, Mogappair, and Nolambur. If you are searching for the best gym in Chennai — you have found it.",
           "schemaMarkupFields": [
             "name",
             "address",
@@ -933,7 +933,7 @@
         "states": [
           {
             "state": "loading",
-            "microcopy": "Loading [Name]'s story..."
+            "microcopy": "Loading Arun's story..."
           },
           {
             "state": "buffering",
@@ -941,11 +941,11 @@
           },
           {
             "state": "error",
-            "microcopy": "Video unavailable right now. Watch [Name]'s story on our Instagram: @[gymhandle]"
+            "microcopy": "Video unavailable right now. Watch Arun's story on our Instagram: @aurawellnesschennai"
           },
           {
             "state": "ended",
-            "microcopy": "[Name] made it to 90 days. You can too. → Get My Free Trial",
+            "microcopy": "Arun made it to 90 days. You can too. → Get My Free Trial",
             "conversionNote": "Visitor is at peak emotional engagement when the video ends. This state fires a CTA immediately."
           }
         ]

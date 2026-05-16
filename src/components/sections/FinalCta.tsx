@@ -23,8 +23,7 @@ export function FinalCta() {
       <div className="max-w-4xl mx-auto text-center relative z-10 mb-20">
         
         <Animate variant="fadeUp" duration={700}>
-          <SectionHeader 
-            eyebrow={data.eyebrowLabel}
+          <SectionHeader
             heading={data.headline}
             subtitle={data.subHeadline}
             align="center"

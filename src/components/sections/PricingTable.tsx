@@ -131,7 +131,7 @@ export function PricingTable() {
             <h3 className="text-text-heading text-xl md:text-2xl font-extrabold mb-8 leading-snug">
               {data.closingCta.closingLine}
             </h3>
-            <WhatsAppButton 
+            <WhatsAppButton
               href={`https://wa.me/919876543210?text=${encodeURIComponent(data.closingCta.ctaButton.preFilledWhatsAppMessage)}`}
               className="w-full sm:w-auto px-10"
             >
@@ -140,6 +140,34 @@ export function PricingTable() {
             <p className="text-xs md:text-sm font-bold text-text-body mt-4 opacity-80">
               {data.closingCta.ctaButton.belowButtonMicroLine}
             </p>
+
+            {/* Payment method indicators — reduces purchase anxiety for Indian market */}
+            <div className="mt-8 flex flex-col items-center gap-3">
+              <p className="text-[10px] text-gray-500 uppercase tracking-widest font-bold">We accept</p>
+              <div className="flex items-center gap-4 flex-wrap justify-center">
+                {/* UPI */}
+                <div className="flex items-center gap-1.5 bg-white/5 border border-gray-700 rounded px-3 py-1.5" title="UPI (PhonePe, GPay, Paytm)">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-brand-primary"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                  <span className="text-white text-xs font-bold">UPI</span>
+                </div>
+                {/* Cash */}
+                <div className="flex items-center gap-1.5 bg-white/5 border border-gray-700 rounded px-3 py-1.5" title="Cash accepted at front desk">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-brand-primary"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/></svg>
+                  <span className="text-white text-xs font-bold">Cash</span>
+                </div>
+                {/* Visa/Card */}
+                <div className="flex items-center gap-1.5 bg-white/5 border border-gray-700 rounded px-3 py-1.5" title="Visa and Mastercard accepted">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-brand-primary"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h2"/></svg>
+                  <span className="text-white text-xs font-bold">Card</span>
+                </div>
+                {/* EMI */}
+                <div className="flex items-center gap-1.5 bg-white/5 border border-gray-700 rounded px-3 py-1.5" title="EMI options available">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-brand-primary"><path d="M12 2v20M2 12h20"/></svg>
+                  <span className="text-white text-xs font-bold">EMI</span>
+                </div>
+              </div>
+              <p className="text-[10px] text-gray-600 font-medium">No joining fee · No hidden charges</p>
+            </div>
           </div>
         </Animate>
 

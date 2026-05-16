@@ -24,25 +24,25 @@ const YouTubeSVG = () => (
 
 export function Footer() {
   const data = copyData.websiteData.sections.footer;
-  
+
   return (
     <footer className="w-full relative z-40 bg-brand-dark mt-auto overflow-hidden">
-       {/* 1. Pre Footer Strip aligned to Female-First warm tones */}
+       {/* 1. Pre Footer Trust Strip */}
        <div className="w-full bg-black py-8 text-center px-4 shadow-sm border-y border-brand-primary/10">
          <p className="text-white font-extrabold uppercase tracking-[0.15em] text-xs md:text-sm">
             {data.preFooterTrustStrip.stripCopy}
          </p>
        </div>
 
-       {/* 2. Primary 4-Col Integration Grid */}
+       {/* 2. Primary 4-Col Grid */}
        <div className="w-full max-w-7xl mx-auto pt-20 pb-16 px-6">
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
-            
-            {/* Column 1: Core Platform Identification */}
+
+            {/* Column 1: Brand */}
             <div className="flex flex-col">
-              <h4 className="text-white text-2xl tracking-tight font-extrabold mb-6">
+              <h2 className="text-white text-2xl tracking-tight font-extrabold mb-6">
                 {data.primaryFooterGrid.columnAbout.heading}
-              </h4>
+              </h2>
               <p className="text-gray-400 text-sm leading-relaxed mb-6 font-medium">
                 {data.primaryFooterGrid.columnAbout.body}
               </p>
@@ -50,30 +50,56 @@ export function Footer() {
                 {data.primaryFooterGrid.columnAbout.socialProofMicroLine}
               </p>
               <div className="flex items-center gap-4 text-gray-500">
-                <a href="#" className="hover:text-white transition-colors" aria-label={data.primaryFooterGrid.columnAbout.socialMediaLinks.instagram.action}><InstaSVG /></a>
-                <a href="#" className="hover:text-white transition-colors" aria-label={data.primaryFooterGrid.columnAbout.socialMediaLinks.facebook.action}><FBSVG /></a>
-                <a href="#" className="hover:text-white transition-colors" aria-label={data.primaryFooterGrid.columnAbout.socialMediaLinks.youtube.action}><YouTubeSVG /></a>
+                <a
+                  href="https://instagram.com/aurawellnesschennai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                  aria-label="Follow Aura Wellness on Instagram"
+                >
+                  <InstaSVG />
+                </a>
+                <a
+                  href="https://facebook.com/aurawellnesschennai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                  aria-label="Follow Aura Wellness on Facebook"
+                >
+                  <FBSVG />
+                </a>
+                <a
+                  href="https://youtube.com/@aurawellnesschennai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                  aria-label="Watch Aura Wellness transformation videos on YouTube"
+                >
+                  <YouTubeSVG />
+                </a>
               </div>
             </div>
 
-            {/* Column 2: Navigation Layer */}
+            {/* Column 2: Navigation — IDs match actual section IDs in the DOM */}
             <div className="flex flex-col lg:pl-6">
-              <h4 className="text-white text-base font-extrabold tracking-wide mb-6 uppercase">
+              <h3 className="text-white text-base font-extrabold tracking-wide mb-6 uppercase">
                 {data.primaryFooterGrid.columnNavigate.heading}
-              </h4>
+              </h3>
               <ul className="flex flex-col gap-3.5 mt-1">
-                <li><a href="#home" className="text-sm tracking-wide transition-colors text-gray-400 hover:text-white font-medium">Home</a></li>
-                <li><a href="#services" className="text-sm tracking-wide transition-colors text-gray-400 hover:text-white font-medium">Services</a></li>
-                <li><a href="#booking" className="text-sm tracking-wide transition-colors text-brand-primary font-bold hover:text-white">Pricing</a></li>
-                <li><a href="#transform" className="text-sm tracking-wide transition-colors text-gray-400 hover:text-white font-medium">Transform</a></li>
+                <li><a href="#hero" className="text-sm tracking-wide transition-colors text-gray-400 hover:text-white font-medium">Home</a></li>
+                <li><a href="#trainers" className="text-sm tracking-wide transition-colors text-gray-400 hover:text-white font-medium">Trainers</a></li>
+                <li><a href="#pricing" className="text-sm tracking-wide transition-colors text-brand-primary font-bold hover:text-white">Pricing</a></li>
+                <li><a href="#results" className="text-sm tracking-wide transition-colors text-gray-400 hover:text-white font-medium">Transformations</a></li>
+                <li><a href="#services" className="text-sm tracking-wide transition-colors text-gray-400 hover:text-white font-medium">FAQ</a></li>
+                <li><a href="#how-it-works" className="text-sm tracking-wide transition-colors text-gray-400 hover:text-white font-medium">How It Works</a></li>
               </ul>
             </div>
 
-            {/* Column 3: Hours Protocol */}
+            {/* Column 3: Hours */}
             <div className="flex flex-col">
-              <h4 className="text-white text-base font-extrabold tracking-wide mb-6 uppercase">
+              <h3 className="text-white text-base font-extrabold tracking-wide mb-6 uppercase">
                 {data.primaryFooterGrid.columnOperatingHours.heading}
-              </h4>
+              </h3>
               <ul className="flex flex-col gap-3 mb-8">
                 {data.primaryFooterGrid.columnOperatingHours.hours.map((h, idx) => (
                   <li key={idx} className="flex justify-between items-center text-sm border-b border-gray-800/80 pb-2.5 font-medium text-gray-400">
@@ -92,17 +118,22 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Column 4: Full Pipeline Contact Output */}
+            {/* Column 4: Contact */}
             <div className="flex flex-col">
-              <h4 className="text-white text-base font-extrabold tracking-wide mb-6 uppercase">
+              <h3 className="text-white text-base font-extrabold tracking-wide mb-6 uppercase">
                 {data.primaryFooterGrid.columnContact.heading}
-              </h4>
+              </h3>
 
               <div className="flex flex-col gap-6">
                  {/* WhatsApp block */}
                  <div className="flex flex-col items-start gap-1">
                    <span className="text-[10px] text-gray-500 font-extrabold uppercase tracking-[0.2em]">{data.primaryFooterGrid.columnContact.whatsAppBlock.label}</span>
-                   <a href="#" className="text-white font-bold hover:text-brand-primary transition-colors text-sm underline underline-offset-4 decoration-brand-primary/30">
+                   <a
+                     href={`https://wa.me/919876543210?text=${encodeURIComponent(data.primaryFooterGrid.columnContact.whatsAppBlock.preFilledWhatsAppMessage)}`}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-white font-bold hover:text-brand-primary transition-colors text-sm underline underline-offset-4 decoration-brand-primary/30"
+                   >
                      {data.primaryFooterGrid.columnContact.whatsAppBlock.buttonLabel}
                    </a>
                    <span className="text-xs text-gray-400 mt-1">{data.primaryFooterGrid.columnContact.whatsAppBlock.belowButtonMicroLine}</span>
@@ -112,12 +143,12 @@ export function Footer() {
                  <div className="flex flex-col items-start gap-1">
                    <span className="text-[10px] text-gray-500 font-extrabold uppercase tracking-[0.2em]">{data.primaryFooterGrid.columnContact.phoneBlock.label}</span>
                    <a href="tel:+919876543210" className="text-white font-bold font-mono hover:text-brand-primary transition-colors text-sm tracking-wide">
-                     {data.primaryFooterGrid.columnContact.phoneBlock.displayLabel}
+                     +91 98765 43210
                    </a>
                    <span className="text-xs text-brand-primary opacity-80 mt-1 leading-snug">{data.primaryFooterGrid.columnContact.phoneBlock.subLabel}</span>
                  </div>
 
-                 {/* Physical Location Address Base Block */}
+                 {/* Physical Address Block */}
                  <div className="flex flex-col items-start gap-1 mt-2 p-4 bg-gray-900 rounded-lg border border-gray-800">
                    <span className="text-[10px] text-brand-primary font-extrabold uppercase tracking-[0.2em] mb-1.5">{data.primaryFooterGrid.columnContact.physicalAddressBlock.label}</span>
                    <p className="text-sm text-gray-300 font-medium leading-relaxed mb-3">
@@ -133,32 +164,31 @@ export function Footer() {
          </div>
        </div>
 
-       {/* 3. Google Maps Embed Layout Constraints Implemented (min-h-400px desktop) */}
+       {/* 3. Google Maps Embed — Anna Nagar, Chennai */}
        <div className="w-full bg-gray-950 relative border-y border-gray-800">
           <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-brand-dark to-transparent z-10 pointer-events-none" />
-          
+
           <div className="absolute top-10 left-0 w-full text-center z-20 pointer-events-none px-4">
              <p className="text-white font-extrabold text-xl md:text-2xl drop-shadow-lg mb-2 tracking-tight">
                {data.googleMapsEmbed.aboveEmbedLine}
              </p>
-
           </div>
 
-          <iframe 
-             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124403.04758832049!2d80.124505!3d13.0645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b686314bf!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5823!2d80.2100!3d13.0878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526136df00526f%3A0x534ca62a0fb2c9b4!2sAnna%20Nagar%20West%2C%20Chennai%2C%20Tamil%20Nadu%20600040!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
              className="w-full min-h-[300px] lg:min-h-[450px] opacity-70 grayscale-[30%] hover:grayscale-0 hover:opacity-100 transition-all duration-700 pointer-events-auto"
              loading="lazy"
              referrerPolicy="no-referrer-when-downgrade"
              title={data.googleMapsEmbed.mapPinLabel}
+             aria-label="Map showing Aura Wellness location in Anna Nagar West, Chennai"
           ></iframe>
-          
-          {/* SEO Text dynamically appended but hidden efficiently */}
+
           <div className="sr-only">
              {data.googleMapsEmbed.neighbourhoodSeoLine}
           </div>
        </div>
 
-       {/* 4. Sub-Layout Footer Boundary (Legal Bar) */}
+       {/* 4. Legal Bar */}
        <div className="w-full bg-black py-6 px-6">
          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
            <p className="text-gray-500 text-xs font-semibold">

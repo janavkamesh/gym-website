@@ -22,8 +22,7 @@ export function FaqSection() {
     <section id="services" className="w-full py-16 px-6 lg:py-24 bg-white text-gray-900 border-t border-gray-100/50">
       <div className="max-w-4xl mx-auto">
         <Animate variant="fadeUp" duration={700}>
-          <SectionHeader 
-            eyebrow="Got Questions?"
+          <SectionHeader
             heading="Clear Answers. No Hidden Agendas."
             align="center"
           />

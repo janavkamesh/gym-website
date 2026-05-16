@@ -23,8 +23,7 @@ export function TrainerProfiles() {
     <section id="trainers" className="w-full py-16 px-6 lg:py-24 bg-surface-base">
       <div className="max-w-7xl mx-auto">
         <Animate variant="fadeUp" duration={700}>
-          <SectionHeader 
-            eyebrow={data.eyebrowLabel}
+          <SectionHeader
             heading={data.headline}
             align="center"
           />

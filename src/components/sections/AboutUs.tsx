@@ -13,8 +13,7 @@ export function AboutUs() {
             <div className="absolute bottom-0 left-0 -ml-32 -mb-32 w-96 h-96 bg-brand-primary/5 blur-[100px] rounded-full z-0 pointer-events-none" />
 
             <Animate variant="fadeUp" duration={600}>
-              <SectionHeader 
-                eyebrow="Our Story"
+              <SectionHeader
                 heading="Built For Real People."
                 align="center"
                 className="z-10 relative mb-12 text-gray-900"

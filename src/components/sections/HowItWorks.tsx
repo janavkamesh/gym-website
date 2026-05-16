@@ -40,8 +40,7 @@ export function HowItWorks() {
     <section id="how-it-works" className="w-full py-16 px-6 lg:py-24 bg-white text-gray-900">
       <div className="max-w-7xl mx-auto">
         <Animate variant="fadeUp" duration={700}>
-          <SectionHeader 
-            eyebrow={data.eyebrowLabel}
+          <SectionHeader
             heading={data.headline}
             align="center"
           />
