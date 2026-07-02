@@ -5,11 +5,11 @@ import { SectionHeader, Animate } from '@/components/ui';
 
 export function FaqSection() {
   const faqs = [
-    { question: 'Is parking available?', answer: 'Yes, we have dedicated, secure parking on-site for all Aura Wellness members. No need to circle the block.' },
-    { question: 'What happens during my 1-day free trial?', answer: 'You get full access to the floor, exactly like a paying member. One of our trainers will show you around, but there is zero pressure to buy.' },
-    { question: 'Can I pause my membership if I travel?', answer: 'Absolutely. We understand life happens. You can pause your membership for up to 30 days every year without any penalty or hidden fees.' },
-    { question: 'Do I need to be fit to start?', answer: 'Not at all. Over 80% of our members started just like you. We build programs tailored entirely to your absolute beginner status.' },
-    { question: 'Are personal trainers included?', answer: 'Every new member gets a complimentary 1-on-1 strategy session. If you want continued dedicated coaching, you can upgrade to Premium Training at any time.' }
+    { question: 'Do I need any experience to join?', answer: 'Not at all. Whether you are a complete beginner or getting back after a long break, our trainers will guide you every step of the way.' },
+    { question: 'What programs do you offer at Power Fitness?', answer: 'We offer Strength Training, Weight Loss, CrossFit, and Personal Training — something for every fitness goal.' },
+    { question: 'How do I get started?', answer: 'Simple. Just walk in or send us a WhatsApp message and we will take care of everything from there.' },
+    { question: 'Is there a joining fee?', answer: 'No hidden charges, no surprises. You only pay for your membership and that is it.' },
+    { question: 'Is Power Fitness suitable for women?', answer: 'Absolutely. Power Fitness is a welcoming space for everyone. Many of our members are women and they train here comfortably every single day.' }
   ];
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -19,30 +19,34 @@ export function FaqSection() {
   };
 
   return (
-    <section id="services" className="w-full py-16 px-6 lg:py-24 bg-white text-gray-900 border-t border-gray-100/50">
+    <section id="services" className="w-full py-12 lg:py-16 px-6 md:px-12 lg:px-16 bg-[#16181C] text-white border-t border-[#0B0C10]">
       <div className="max-w-4xl mx-auto">
-        <Animate variant="fadeUp" duration={700}>
-          <SectionHeader 
-            eyebrow="Got Questions?"
-            heading="Clear Answers. No Hidden Agendas."
-            align="center"
-          />
+        <Animate variant="fadeUp" duration={400}>
+          <div className="flex flex-col items-center justify-center">
+            <span className="eyebrow-label inline-block px-3.5 py-1.5 rounded-full bg-transparent border border-[#E63946] shadow-sm">
+              Got questions?
+            </span>
+            <SectionHeader 
+              heading={<span className="text-white">Quick answers to your questions</span>}
+              align="center"
+            />
+          </div>
         </Animate>
         
         <div className="mt-10 space-y-3">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <Animate key={index} variant="fadeUp" delay={index * 100} duration={600}>
+              <Animate key={index} variant="fadeUp" delay={index * 50} duration={350}>
                 <div 
                   onClick={() => toggleOpen(index)}
-                  className="px-6 py-4 md:py-5 bg-surface-base border border-gray-100/80 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-sm transition-shadow cursor-pointer select-none group"
+                  className="px-6 py-4 md:py-5 bg-[#0B0C10] border border-[#0B0C10] rounded-2xl md:rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-sm transition-shadow cursor-pointer select-none group"
                 >
                   <div className="flex justify-between items-center w-full">
-                    <h4 className="text-white font-bold text-base md:text-lg pr-4 group-hover:text-brand-primary transition-colors">
+                    <h4 className={`font-bold text-base md:text-lg pr-4 transition-colors ${isOpen ? 'text-[#E63946]' : 'text-white'}`}>
                       {faq.question}
                     </h4>
-                    <span className="text-white group-hover:text-brand-primary transform transition-colors duration-300">
+                    <span className={`transform transition-colors duration-300 ${isOpen ? 'text-[#E63946]' : 'text-white'}`}>
                       {isOpen ? (
                         <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
                       ) : (
@@ -53,7 +57,7 @@ export function FaqSection() {
                   
                   <div className={`grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-3 md:mt-4' : 'grid-rows-[0fr] opacity-0 mt-0'}`}>
                     <div className="overflow-hidden">
-                      <p className="text-gray-300 text-sm md:text-base font-medium leading-relaxed">{faq.answer}</p>
+                      <p className="body-text text-[#A0A8B8]">{faq.answer}</p>
                     </div>
                   </div>
                 </div>

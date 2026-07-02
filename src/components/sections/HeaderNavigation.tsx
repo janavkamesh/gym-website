@@ -1,5 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+import copyData from '../../../gym-website-copy.json';
+import { CTAButton } from '@/components/ui';
+
+const heroData = copyData.websiteData.sections.heroSection;
 
 const PhoneIcon = () => (
   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand-primary">
@@ -7,38 +11,33 @@ const PhoneIcon = () => (
   </svg>
 );
 
-const ChatIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-3 9H7v-2h10v2zm0-4H7V5h10v2z"/>
-  </svg>
-);
 
 export function HeaderNavigation() {
   return (
-    <header className="w-full sticky top-0 z-50 bg-black shadow-sm border-b border-white/10 transition-all">
+    <header className="w-full sticky top-0 z-50 bg-[#0B0C10] shadow-sm transition-all">
       <div className="max-w-7xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
         
         {/* Left: Logo aligned to content grid */}
         <div className="flex-shrink-0 flex items-center">
-          <Link href="#hero" className="text-white font-extrabold text-lg md:text-xl tracking-tight" aria-label="Aura Wellness Home">
-            Aura Wellness Chennai
+          <Link href="#" className="text-white font-extrabold text-lg md:text-xl tracking-tight" aria-label="Power Fitness Home">
+            Power Fitness
           </Link>
         </div>
 
         {/* Center: Nav Links */}
         <nav className="hidden lg:flex items-center justify-center gap-6 xl:gap-8 flex-grow pt-1">
-          <Link href="#hero" className="text-gray-300 font-medium hover:text-brand-primary transition-colors text-sm">Home</Link>
-          <Link href="#results" className="text-gray-300 font-medium hover:text-brand-primary transition-colors text-sm">Results</Link>
-          <Link href="#how-it-works" className="text-gray-300 font-medium hover:text-brand-primary transition-colors text-sm">How It Works</Link>
-          <Link href="#trainers" className="text-gray-300 font-medium hover:text-brand-primary transition-colors text-sm">Trainers</Link>
-          <Link href="#pricing" className="text-gray-300 font-medium hover:text-brand-primary transition-colors text-sm">Pricing</Link>
+          <Link href="#" className="text-white hover:text-[#E63946] transition-colors text-sm font-semibold">Home</Link>
+          <Link href="#programs" className="text-white hover:text-[#E63946] transition-colors text-sm font-semibold">Programs</Link>
+          <Link href="#trainers" className="text-white hover:text-[#E63946] transition-colors text-sm font-semibold">Trainers</Link>
+          <Link href="#pricing" className="text-white hover:text-[#E63946] transition-colors text-sm font-semibold">Memberships</Link>
+          <Link href="#contact" className="text-white hover:text-[#E63946] transition-colors text-sm font-semibold">Contact</Link>
         </nav>
 
         {/* Right: Contact info + CTA aligned to content grid */}
         <div className="flex items-center gap-4 lg:gap-6 flex-shrink-0">
           
           <div className="hidden xl:flex items-center gap-4 pt-1">
-            <a href="tel:+919876543210" className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
+            <a href="tel:+919876543210" className="flex items-center gap-2 text-white hover:text-[#E63946] transition-colors">
               <PhoneIcon />
               <span className="text-[13px] font-semibold tracking-wide">+91 98765 43210</span>
             </a>
@@ -46,18 +45,17 @@ export function HeaderNavigation() {
             <div className="h-4 w-px bg-gray-300"></div>
             
             <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-primary shadow-[0_0_4px_rgba(230,57,70,0.6)]"></div>
-              <span className="text-[13px] text-gray-300 font-medium tracking-wide">5:30AM - 10PM</span>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#E63946] shadow-[0_0_4px_rgba(230,57,70,0.6)]"></div>
+              <span className="text-[13px] text-white font-medium tracking-wide">5:30AM - 10PM</span>
             </div>
           </div>
           
-          <Link 
-            href="#pricing"
-            className="flex items-center gap-2 text-white bg-brand-primary text-[13px] md:text-sm py-2 px-5 md:py-2.5 md:px-6 font-bold shadow-md hover:bg-brand-hover hover:shadow-lg transition-all rounded-full mr-0"
+          <CTAButton
+            href={`https://wa.me/919876543210?text=${encodeURIComponent(heroData.primaryButton.preFilledWhatsAppMessageTask3)}`}
+            className="mr-0 shrink-0 nav-cta"
           >
-            <ChatIcon />
-            Free Trial - Chat with Us
-          </Link>
+            Join Now
+          </CTAButton>
         </div>
 
       </div>

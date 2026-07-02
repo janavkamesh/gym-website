@@ -15,18 +15,18 @@ export function SectionHeader({ heading, eyebrow, subtitle, align = 'left', clas
     <div className={`${wrapperClasses} ${className}`} {...props}>
       {/* Informational subtle tracking constraint */}
       {eyebrow && (
-        <span className="text-brand-primary font-extrabold uppercase tracking-widest text-xs">
+        <span className="eyebrow-label">
           {eyebrow}
         </span>
       )}
       
-      <h2 className="text-inherit text-xl md:text-2xl lg:text-3xl font-black leading-tight">
+      <h2 className="section-heading text-white">
         {heading}
       </h2>
       
       {/* Action-Oriented subtext boundary */}
       {subtitle && (
-        <p className="text-inherit opacity-90 text-sm md:text-base max-w-2xl font-medium mt-1.5">
+        <p className="body-text text-inherit opacity-90 max-w-2xl mt-1.5">
           {subtitle}
         </p>
       )}

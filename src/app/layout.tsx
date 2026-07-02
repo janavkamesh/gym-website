@@ -4,6 +4,7 @@ import "./globals.css";
 import HeaderNavigation from '@/components/sections/HeaderNavigation';
 import Footer from '@/components/sections/Footer';
 import StickyWhatsAppButton from '@/components/sections/StickyWhatsAppButton';
+import SmoothScrollProvider from '@/components/ui/SmoothScrollProvider';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,10 +31,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col">
-        <HeaderNavigation />
-        <main className="flex-grow flex flex-col">{children}</main>
-        <Footer />
-        <StickyWhatsAppButton />
+        <SmoothScrollProvider>
+          <HeaderNavigation />
+          <main className="flex-grow flex flex-col">{children}</main>
+          <Footer />
+          <StickyWhatsAppButton />
+        </SmoothScrollProvider>
       </body>
     </html>
   );

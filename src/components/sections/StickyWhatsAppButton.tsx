@@ -8,7 +8,7 @@ export function StickyWhatsAppButton() {
   return (
     <a 
       href={`https://wa.me/919876543210?text=${encodeURIComponent(data.preFilledWhatsAppMessage)}`}
-      className="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-brand-primary text-white rounded-full min-w-[60px] min-h-[60px] flex items-center justify-center p-3 hover:scale-[1.08] transition-all z-[9999] group pointer-events-auto shadow-[0_4px_24px_rgba(230,57,70,0.5)] hover:shadow-[0_8px_32px_rgba(230,57,70,0.7)]"
+      className="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-[#25D366] text-white rounded-full min-w-[44px] min-h-[44px] w-14 h-14 flex items-center justify-center p-3 hover:bg-[#20BD5A] hover:-translate-y-0.5 hover:shadow-lg active:scale-[0.98] transition-all duration-200 z-[9999] group pointer-events-auto shadow-md"
       aria-label={data.optionA.replace('💬 ', '')}
       title={data.tooltipDesktop}
     >
