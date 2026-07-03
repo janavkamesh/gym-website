@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   ],
   creator: "Janav Kamesh",
   verification: {
-    google: "86Pam8_prKe79eGz_eCGvuxErZnW3G1QI5bQrR7nkQU",
+    google: "ZXPymU06kpne5xBnTbb1zkcGO-BBmy8rVOACG4SnzAY",
   },
 };
 
