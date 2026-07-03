@@ -175,16 +175,27 @@ h1, h2, h3, .section-heading, [class*='heading'], [class*='title'] {
   }
 }
 
+/* HERO HEADING MOBILE 30% INCREASE */
+@media (min-width: 600px) and (max-width: 767px) { .hero-heading-mobile { font-size: 44px !important; } }
+@media (min-width: 425px) and (max-width: 599px) { .hero-heading-mobile { font-size: 39px !important; } }
+@media (min-width: 375px) and (max-width: 424px) { .hero-heading-mobile { font-size: 34px !important; } }
+@media (max-width: 374px) { .hero-heading-mobile { font-size: 29px !important; } }
+
 /* EYEBROW LABEL TYPOGRAPHY SYSTEM */
 .eyebrow-label, [class*='label'], [class*='eyebrow'], [class*='tag'], [class*='badge'] {
   font-size: clamp(10px, 1vw, 13px) !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   letter-spacing: 0.15em !important;
   text-transform: uppercase !important;
   line-height: 1.4 !important;
   color: #E63946 !important;
   margin-bottom: 12px !important;
   display: inline-block !important;
+}
+
+.eyebrow-label {
+  border: 1.5px solid #E63946 !important;
+  border-radius: 9999px !important;
 }
 
 /* Desktop — 1440px and above */
@@ -470,12 +481,13 @@ h1, h2, h3, .section-heading, [class*='heading'], [class*='title'] {
 
 .owner-tag {
   font-size: clamp(11px, 1vw, 13px) !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   letter-spacing: 0.08em !important;
   color: #E63946 !important;
-  border: 1px solid #E63946 !important;
+  border: 1.5px solid #E63946 !important;
   border-radius: 9999px !important;
-  padding: 6px 16px !important;
+  padding: 6px 14px !important;
+  line-height: 1.4 !important;
   white-space: nowrap !important;
   background: transparent !important;
 }
@@ -549,7 +561,6 @@ h1, h2, h3, .section-heading, [class*='heading'], [class*='title'] {
     gap: 8px !important;
   }
   .owner-tag {
-    padding: 4px 12px !important;
     font-size: 10px !important;
   }
 }
@@ -587,7 +598,6 @@ h1, h2, h3, .section-heading, [class*='heading'], [class*='title'] {
     gap: 6px !important;
   }
   .owner-tag {
-    padding: 4px 10px !important;
     font-size: 9px !important;
   }
 }

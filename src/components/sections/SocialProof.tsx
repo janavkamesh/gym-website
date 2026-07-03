@@ -31,7 +31,7 @@ const testimonials = [
 ];
 
 const StarRating = () => (
-  <div className="flex gap-0.5 mb-1 text-[#E63946]">
+  <div className="flex gap-0.5 mb-1 text-[#FBBC05]">
     {[...Array(5)].map((_, i) => (
       <svg key={i} width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
@@ -109,9 +109,12 @@ export function SocialProof() {
   };
 
   return (
-    <section id="results" className="relative w-full py-12 lg:py-16 px-6 md:px-12 lg:px-16 overflow-hidden bg-[url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop')] bg-fixed bg-cover bg-center">
+    <section id="results" className="relative w-full py-12 lg:py-16 px-6 md:px-12 lg:px-16 overflow-hidden bg-black">
+      {/* Background Image Layer with 25% Opacity */}
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop')] bg-fixed bg-cover bg-center opacity-25 z-0" />
+      
       {/* Dark overlay for low opacity image effect */}
-      <div className="absolute inset-0 bg-black/85 z-0" />
+      <div className="absolute inset-0 bg-black/[0.65] z-0" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
 
@@ -128,6 +131,7 @@ export function SocialProof() {
         </Animate>
 
         {/* Scroll Container */}
+        <Animate variant="fadeUp" delay={200} duration={500}>
         <div
           className="relative w-full px-2 group"
           onMouseEnter={() => isHovering.current = true}
@@ -208,6 +212,7 @@ export function SocialProof() {
             ))}
           </div>
         </div>
+        </Animate>
 
       </div>
     </section>

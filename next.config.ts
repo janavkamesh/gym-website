@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
+// @ts-ignore
+import withQRCode from "next-qr";
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ['192.168.0.103'],
   images: {
+    qualities: [75, 85],
     remotePatterns: [
       {
         protocol: 'https',
@@ -11,4 +15,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withQRCode(nextConfig);

@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <main className="relative">
       {/* Sticky Hero Section */}
-      <div className="sticky top-0 h-screen w-full z-0 flex flex-col justify-center bg-black">
+      <div className="sticky top-0 h-[90vh] md:h-[100vh] w-full z-0 flex flex-col items-start justify-start bg-black">
         <HeroSection />
       </div>
-      
+
       {/* Scrollable Content overlapping the Hero */}
       <div className="relative z-10 bg-white w-full shadow-2xl">
         <ValueProp />

@@ -15,12 +15,21 @@ const PhoneIcon = () => (
 export function HeaderNavigation() {
   return (
     <header className="w-full sticky top-0 z-50 bg-[#0B0C10] shadow-sm transition-all">
-      <div className="max-w-7xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-[77px] md:h-20 flex items-center justify-between">
         
         {/* Left: Logo aligned to content grid */}
         <div className="flex-shrink-0 flex items-center">
-          <Link href="#" className="text-white font-extrabold text-lg md:text-xl tracking-tight" aria-label="Power Fitness Home">
-            Power Fitness
+          <Link href="#" className="flex items-center gap-2 text-white hover:text-[#E63946] transition-colors" aria-label="Power Fitness Home">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-[#E63946]">
+              <path d="M14.4 14.4l-4.8-4.8" />
+              <path d="M6.8 20.8l-4-4a2.8 2.8 0 010-4l1.6-1.6 8 8-1.6 1.6a2.8 2.8 0 01-4 0z" />
+              <path d="M17.2 3.2l4 4a2.8 2.8 0 010 4l-1.6 1.6-8-8 1.6-1.6a2.8 2.8 0 014 0z" />
+              <path d="M9.6 19.2l1.6-1.6" />
+              <path d="M4.8 14.4l1.6-1.6" />
+              <path d="M19.2 9.6l-1.6 1.6" />
+              <path d="M14.4 4.8l-1.6 1.6" />
+            </svg>
+            <span className="font-extrabold text-lg md:text-xl tracking-tight">Power Fitness</span>
           </Link>
         </div>
 

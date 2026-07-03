@@ -35,8 +35,17 @@ export function Footer() {
 
           {/* Column 1: Core Platform Identification */}
           <div className="flex flex-col col-span-1 lg:col-span-1 order-1">
-            <h4 className="text-white text-2xl tracking-tight font-extrabold mb-7">
-              Power Fitness
+            <h4 className="flex items-center gap-2 text-white text-2xl tracking-tight font-extrabold mb-7">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-[#E63946]">
+                <path d="M14.4 14.4l-4.8-4.8" />
+                <path d="M6.8 20.8l-4-4a2.8 2.8 0 010-4l1.6-1.6 8 8-1.6 1.6a2.8 2.8 0 01-4 0z" />
+                <path d="M17.2 3.2l4 4a2.8 2.8 0 010 4l-1.6 1.6-8-8 1.6-1.6a2.8 2.8 0 014 0z" />
+                <path d="M9.6 19.2l1.6-1.6" />
+                <path d="M4.8 14.4l1.6-1.6" />
+                <path d="M19.2 9.6l-1.6 1.6" />
+                <path d="M14.4 4.8l-1.6 1.6" />
+              </svg>
+              <span>Power Fitness</span>
             </h4>
             <p className="body-text text-[#A0A8B8] mb-6">
               A gym that trains real people and delivers real results. Chennai's own since 2014.

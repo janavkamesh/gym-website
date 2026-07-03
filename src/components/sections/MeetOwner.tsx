@@ -1,12 +1,17 @@
 import React from 'react';
+import { Animate } from '@/components/ui';
 
 export function MeetOwner() {
   return (
-    <section id="meet-owner" className="owner-section relative overflow-hidden bg-[url('/assets/aura-wellness-chennai-muscle-gain-result-2.webp')] bg-fixed bg-cover bg-center">
+    <section id="meet-owner" className="owner-section relative overflow-hidden bg-black">
+      {/* Background Image Layer with 25% Opacity */}
+      <div className="absolute inset-0 bg-[url('/assets/aura-wellness-chennai-muscle-gain-result-2.webp')] bg-fixed bg-cover bg-center opacity-25 z-0" />
+      
       {/* Dark overlay for low opacity image effect */}
-      <div className="absolute inset-0 bg-black/85 z-0" />
+      <div className="absolute inset-0 bg-black/[0.65] z-0" />
 
       <div className="relative z-10 max-w-[1200px] mx-auto">
+        <Animate variant="fadeUp" duration={500}>
         {/* Centered Top Heading */}
         <div className="flex flex-col items-center justify-center mb-10 md:mb-16">
           <span className="eyebrow-label inline-block px-3.5 py-1.5 mb-4 rounded-full bg-transparent border border-[#E63946] shadow-sm text-center">
@@ -44,6 +49,7 @@ export function MeetOwner() {
             </div>
           </div>
         </div>
+        </Animate>
       </div>
     </section>
   );

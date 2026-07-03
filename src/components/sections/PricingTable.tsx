@@ -1,9 +1,11 @@
 import React from 'react';
+import { Animate } from '@/components/ui';
 
 export function PricingTable() {
   return (
     <section id="pricing" className="w-full py-12 lg:py-16 px-6 md:px-12 lg:px-16 bg-[#0B0C10]">
-      <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center">
+      <Animate variant="fadeUp" duration={400}>
+        <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center">
         
         {/* Main Heading */}
         <span className="eyebrow-label inline-block px-3.5 py-1.5 rounded-full bg-transparent border border-[#E63946] shadow-sm">
@@ -34,6 +36,7 @@ export function PricingTable() {
         </a>
 
       </div>
+      </Animate>
     </section>
   );
 }
