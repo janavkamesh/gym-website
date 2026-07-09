@@ -27,7 +27,7 @@ function Counter({ endValue, duration, delay, isDecimal = false, suffix = '' }: 
       const percentage = Math.min(progress / duration, 1);
       // easeOutExpo
       const easeProgress = percentage === 1 ? 1 : 1 - Math.pow(2, -10 * percentage);
-      
+
       setCount(easeProgress * endValue);
 
       if (percentage < 1) {
@@ -53,12 +53,12 @@ export function HeroTrustBadges() {
       {stats.map((stat, idx) => (
         <div key={idx} className="trust-stat">
           <span className="trust-number">
-            <Counter 
-              endValue={stat.endValue} 
-              isDecimal={stat.isDecimal} 
-              suffix={stat.suffix} 
-              delay={2600} 
-              duration={2000} 
+            <Counter
+              endValue={stat.endValue}
+              isDecimal={stat.isDecimal}
+              suffix={stat.suffix}
+              delay={2600}
+              duration={2000}
             />
           </span>
           <span className="trust-label">{stat.label}</span>
