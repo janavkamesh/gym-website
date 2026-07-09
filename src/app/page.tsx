@@ -17,7 +17,7 @@ export default function Home() {
       </div>
 
       {/* Scrollable Content overlapping the Hero */}
-      <div className="relative z-10 bg-white w-full shadow-2xl">
+      <div className="relative z-10 bg-[#0B0C10] w-full shadow-top-glow border-t border-[#E63946]/10">
         <ValueProp />
         <Gallery />
         <MeetOwner />

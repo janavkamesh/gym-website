@@ -48,21 +48,24 @@ export function ValueProp() {
             }
           ].map((program, idx) => (
             <Animate key={idx} variant="fadeUp" delay={idx * 75} duration={350}>
-              <StandardCard className="flex flex-col group overflow-hidden p-6 md:p-8 border-none bg-[#16181C] rounded-2xl md:rounded-3xl shadow-sm">
-                <div className="relative w-full aspect-[4/3] lg:aspect-[16/10] overflow-hidden rounded-xl md:rounded-2xl bg-[#16181C] shrink-0">
-                  <Image 
-                    src={program.image}
-                    alt={program.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="pt-3 pl-[5px] flex flex-col justify-center flex-grow">
-                  <h4 className="text-lg md:text-xl font-extrabold text-white mb-1.5 md:mb-2.5 tracking-wide">
+              <StandardCard className="relative flex flex-col group overflow-hidden !p-0 border-none bg-[#0B0C10] rounded-2xl md:rounded-3xl shadow-sm aspect-[4/3] lg:aspect-[16/10]">
+                <Image 
+                  src={program.image}
+                  alt={program.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105 z-0"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                
+                {/* Faded Background Overlay concentrated at the bottom */}
+                <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-t from-[#0B0C10] via-[#0B0C10]/90 to-transparent transition-opacity duration-500 z-10 pointer-events-none"></div>
+                
+                {/* Text Content Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 px-6 pt-6 pb-3 md:px-8 md:pt-8 md:pb-4 flex flex-col items-center text-center justify-end h-1/2 z-20">
+                  <h4 className="text-lg md:text-xl font-extrabold text-white mb-1.5 md:mb-2 tracking-wide drop-shadow-md">
                     {program.title}
                   </h4>
-                  <p className="body-text text-[#A0A8B8] flex-grow mb-5">
+                  <p className="body-text text-[#A0A8B8] drop-shadow-sm line-clamp-2 md:line-clamp-none min-h-[3rem]">
                     {program.desc}
                   </p>
                 </div>

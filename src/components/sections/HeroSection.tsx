@@ -72,22 +72,22 @@ export function HeroSection({
         {/* FIRST GROUP: Headline, Subtext, CTA Button. Shifted up 20px on mobile */}
         <div className="flex flex-col items-center gap-3 md:gap-4 w-full transform max-md:-translate-y-[10px]">
           {/* H1: Enters first */}
-          <Animate variant="fadeUp" delay={0} duration={750}>
+          <Animate variant="fadeUp" delay={2000} duration={750}>
             <h1 className="section-heading hero-heading-mobile text-white tracking-tight max-w-3xl drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
-              <span className="block md:inline">Your best version </span>
+              <span className="block md:inline">Your <span className="text-[#E63946]">best version</span> </span>
               <span className="block md:inline">starts here</span>
             </h1>
           </Animate>
 
           {/* Paragraph: Enters second */}
-          <Animate variant="fadeUp" delay={200} duration={750}>
+          <Animate variant="fadeUp" delay={2200} duration={750}>
             <p className="body-text text-white max-w-xl drop-shadow-md">
               {subHeadline}
             </p>
           </Animate>
 
           {/* CTA: Enters last */}
-          <Animate variant="fadeUp" delay={400} duration={750}>
+          <Animate variant="fadeUp" delay={2400} duration={750}>
             <div className="flex flex-col items-center">
               <CTAButton
                 href={`https://wa.me/919876543210?text=${encodeURIComponent(primaryButtonWaMessage)}`}
@@ -100,7 +100,7 @@ export function HeroSection({
         </div>
 
         {/* SECOND GROUP: Trust Badges. Shifted down 25-30px on mobile */}
-        <Animate variant="fadeUp" delay={600} duration={750}>
+        <Animate variant="fadeUp" delay={2600} duration={750}>
           <div className="mt-[50px] md:mt-8">
             <HeroTrustBadges />
           </div>

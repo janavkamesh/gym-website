@@ -7,7 +7,7 @@ export function TrainerProfiles() {
     {
       id: "trainer-1",
       name: "Karthik",
-      role: "Strength and personal training coach",
+      role: "Strength and personal training",
       image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=800&auto=format&fit=crop"
     },
     {
@@ -43,24 +43,26 @@ export function TrainerProfiles() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
           {customTrainers.map((trainer, index) => (
             <Animate key={trainer.id} variant="fadeUp" delay={index * 75} duration={350}>
-              <StandardCard className="flex flex-col h-full !p-0 overflow-hidden group bg-[#16181C] border-none shadow-sm">
-                 <div className="p-6 md:p-8 flex flex-col flex-grow">
-                   <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-[#0B0C10] mb-6 border-none">
-                     <Image 
-                       src={trainer.image}
-                       alt={`${trainer.name}, ${trainer.role}`}
-                       fill
-                       className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                       sizes="(max-width: 1024px) 100vw, 33vw"
-                     />
-                   </div>
-                   <h4 className="text-lg md:text-xl font-extrabold text-white mb-1.5 tracking-wide">
+              <StandardCard className="relative flex flex-col overflow-hidden group bg-[#0B0C10] border-none shadow-sm !p-0 aspect-[4/5] rounded-2xl md:rounded-3xl">
+                <Image 
+                  src={trainer.image}
+                  alt={`${trainer.name}, ${trainer.role}`}
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105 z-0"
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                />
+                {/* Faded Background Overlay concentrated at the bottom */}
+                <div className="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-[#0B0C10] via-[#0B0C10]/80 to-transparent z-10 pointer-events-none"></div>
+                
+                {/* Text Content Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 px-6 pt-6 pb-3 md:px-8 md:pt-8 md:pb-4 flex flex-col items-center text-center justify-end h-1/2 z-20">
+                  <h4 className="text-lg md:text-xl font-extrabold text-white mb-1 md:mb-1.5 tracking-wide drop-shadow-md">
                     {trainer.name}
                   </h4>
-                   <p className="text-xs font-extrabold text-[#A0A8B8] uppercase tracking-widest mb-3 leading-relaxed min-h-[3rem]">
-                     {trainer.role}
-                   </p>
-                 </div>
+                  <p className="text-xs font-extrabold text-[#A0A8B8] uppercase tracking-widest leading-relaxed drop-shadow-sm min-h-[1.5rem]">
+                    {trainer.role}
+                  </p>
+                </div>
               </StandardCard>
             </Animate>
           ))}
